@@ -1,21 +1,36 @@
 {
-  "name": "mysamsungnightmare",
-  "version": "2.0.0",
-  "description": "My Samsung Nightmare - Consumer Experience Documentation",
+  "name": "samsung-repair-warning-v3",
+  "version": "3.0.0",
+  "description": "A consumer warning website documenting Samsung repair service issues and community experiences",
   "main": "index.html",
   "scripts": {
-    "start": "python -m http.server 8000",
-    "serve": "python -m http.server 8000"
+    "start": "npx live-server --port=3000 --open=/index.html",
+    "dev": "npx live-server --port=3000 --watch=. --open=/index.html",
+    "build": "echo 'Building static site...' && npm run minify",
+    "minify": "echo 'Minification would happen here in production'",
+    "test": "echo 'Tests would run here'",
+    "deploy": "echo 'Deployment script would run here'"
+  },
+  "keywords": [
+    "samsung",
+    "repair",
+    "consumer-rights",
+    "warning",
+    "documentation",
+    "galaxy-fold",
+    "customer-service"
+  ],
+  "author": "Consumer Advocate",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/TronVonDoom/mysamsungnightmare.git"
   },
-  "keywords": [
-    "documentation",
-    "consumer-rights",
-    "static-site"
-  ],
-  "author": "TronVonDoom",
-  "license": "MIT"
+  "bugs": {
+    "url": "https://github.com/TronVonDoom/mysamsungnightmare/issues"
+  },
+  "homepage": "https://github.com/TronVonDoom/mysamsungnightmare#readme"
 }

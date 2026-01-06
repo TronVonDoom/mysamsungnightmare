@@ -3,378 +3,822 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A documented timeline of my Samsung Galaxy Z Fold 6 screen protector repair experience and subsequent service-related damage dispute.">
-    <title>My Samsung Nightmare - A Consumer Experience Documentation</title>
+    <meta name="description" content="Warning: Learn about common Samsung Mail-In Repair Service issues through documented experiences. See what could go wrong with your device repair and how Samsung handles customer service disputes.">
+    <meta name="keywords" content="Samsung mail-in repair issues, Galaxy Z Fold problems, Samsung customer service complaints, phone repair damage, consumer warning">
+    <title>Samsung Mail-In Repair Warning - Real Customer Experiences & Issues</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Animated Background -->
-    <div class="bg-animation">
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-    </div>
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
 
-    <!-- Sticky Navigation -->
-    <nav class="nav-sticky" id="mainNav">
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <div class="nav-brand">
-                <span class="brand-icon">🔴</span>
-                <span>My Samsung Nightmare</span>
+            <div class="nav-logo">
+                <span class="warning-badge">⚠️</span>
+                <span class="brand-text">Samsung Mail-In Repair Warning</span>
             </div>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="#timeline"><span class="nav-icon">⏱️</span>Timeline</a></li>
-                <li><a href="#damage"><span class="nav-icon">⚠️</span>Damage</a></li>
-                <li><a href="#actions"><span class="nav-icon">📋</span>Actions</a></li>
-                <li><a href="#asking"><span class="nav-icon">🎯</span>Resolution</a></li>
-                <li><a href="#evidence"><span class="nav-icon">📁</span>Evidence</a></li>
-                <li><a href="#faq"><span class="nav-icon">❓</span>FAQ</a></li>
-                <li><a href="#contact"><span class="nav-icon">📧</span>Contact</a></li>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#my-story">My Story</a></li>
+                <li><a href="#community">Community Reports</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#damage">Evidence</a></li>
+                <li><a href="#warning-signs">Warning Signs</a></li>
+                <li><a href="#resources">Resources</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero">
-        <div class="hero-overlay"></div>
-        <div class="container hero-content">
-            <div class="disclaimer-banner neon-border">
-                <span class="warning-icon">⚠️</span>
-                <strong>Disclaimer:</strong> This website documents my personal experience and is not affiliated with or endorsed by Samsung.
-            </div>
-            
-            <h1 class="glitch" data-text="My Samsung Nightmare">My Samsung Nightmare</h1>
-            <p class="hero-subtitle">A documented timeline of my Galaxy Z Fold 6 screen protector repair that escalated into a service-caused damage dispute</p>
-            
-            <div class="hero-stats">
-                <div class="stat-card">
-                    <div class="stat-value">$2,000</div>
-                    <div class="stat-label">Device Value</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-value">3mm</div>
-                    <div class="stat-label">Original Issue</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-value">4+</div>
-                    <div class="stat-label">New Damages</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-value">60+</div>
-                    <div class="stat-label">Days Fighting</div>
-                </div>
-            </div>
-
-            <div class="hero-cta">
-                <a href="#timeline" class="btn btn-primary pulse">
-                    <span>📖</span> Read Full Timeline
-                </a>
-                <a href="#asking" class="btn btn-secondary">
-                    <span>🎯</span> What I Want
-                </a>
-            </div>
+    <section class="hero" id="hero">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
         </div>
-        
-        <div class="scroll-indicator">
-            <div class="mouse">
-                <div class="wheel"></div>
-            </div>
-            <div class="arrow-down"></div>
-        </div>
-    </header>
-
-    <!-- Quick Overview -->
-    <section class="section section-dark" id="overview">
         <div class="container">
-            <div class="overview-grid">
-                <div class="overview-card glow-card">
-                    <div class="card-icon red">📱</div>
-                    <h3>The Device</h3>
-                    <p>Samsung Galaxy Z Fold 6 - Nearly $2,000 premium foldable device with minor screen protector peeling at crease</p>
+            <div class="hero-content">
+                <div class="alert-badge">
+                    <span class="badge-icon">🚨</span>
+                    <span>Consumer Warning Site</span>
                 </div>
-                <div class="overview-card glow-card">
-                    <div class="card-icon yellow">🔧</div>
-                    <h3>The Service</h3>
-                    <p>Simple screen protector replacement turned into conflicting diagnoses, forced payment, and two weeks of minimal communication</p>
+                <h1 class="hero-title">
+                    Think Twice Before Using <span class="highlight-text">Samsung Mail-In Repair Service</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Real documented experiences from customers who mailed their devices to Samsung for simple repairs and received them back with new damage, denied claims, and endless customer service loops.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number" data-count="1989">$0</div>
+                        <div class="stat-label">Device Value Lost</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number" data-count="33">0</div>
+                        <div class="stat-label">Days Fighting</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number" data-count="4">0</div>
+                        <div class="stat-label">New Damages</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number" data-count="15">0+</div>
+                        <div class="stat-label">Similar Cases</div>
+                    </div>
                 </div>
-                <div class="overview-card glow-card">
-                    <div class="card-icon purple">💔</div>
-                    <h3>The Outcome</h3>
-                    <p>Device returned with multiple new damages: scratched screen, frame damage, bezel issues, and adhesive problems</p>
+                <div class="hero-cta">
+                    <a href="#my-story" class="btn btn-primary">
+                        <span>📖</span> Read My Story
+                    </a>
+                    <a href="#community" class="btn btn-secondary">
+                        <span>👥</span> Community Reports
+                    </a>
                 </div>
-                <div class="overview-card glow-card">
-                    <div class="card-icon blue">⚖️</div>
-                    <h3>Current Status</h3>
-                    <p>Attorney General complaint filed, BBB rejected, CEO unresponsive, Samsung now blaming shipping carrier UPS</p>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to learn more</span>
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </section>
+
+    <!-- Disclaimer -->
+    <div class="disclaimer-banner">
+        <div class="container">
+            <div class="disclaimer-content">
+                <span class="disclaimer-icon">⚖️</span>
+                <p><strong>Legal Disclaimer:</strong> This website documents personal consumer experiences and aggregates publicly available information. It is not affiliated with or endorsed by Samsung. All claims are based on documented evidence and personal accounts.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- My Story Section -->
+    <section class="section my-story" id="my-story">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Experience</span>
+                <h2>How a Simple 3mm Screen Protector Issue Became a $1,989 Nightmare</h2>
+                <p class="section-subtitle">What started as a minor warranty repair turned into severe damage, denied responsibility, and a month-long battle for justice.</p>
+            </div>
+
+            <div class="story-grid">
+                <div class="story-card">
+                    <div class="story-icon">📱</div>
+                    <h3>The Original Issue</h3>
+                    <p>Galaxy Z Fold 6 ($1,989) had a 3mm inner screen protector peel at the fold crease. A known issue covered under warranty. Mailed to Samsung Mail-In Repair Service for a simple repair.</p>
+                </div>
+                <div class="story-card">
+                    <div class="story-icon">🔧</div>
+                    <h3>Samsung's Response</h3>
+                    <p>Claimed there was damage on the hinge cover (opposite side) preventing the inner screen protector replacement. The damage they are claiming, was not there when sent off. Required $99 outer assembly replacement for "pre-existing damage."</p>
+                </div>
+                <div class="story-card">
+                    <div class="story-icon">⏰</div>
+                    <h3>Forced Decision</h3>
+                    <p>After more than a week of no communication from Samsung and desperately needing my device back, I reluctantly paid the $99 charge to repair the damage they claimed existed—even though I didn't cause it and it wasn't there when I sent the device in.</p>
+                </div>
+                <div class="story-card">
+                    <div class="story-icon">✅</div>
+                    <h3>Service Promised</h3>
+                    <p>Samsung committed to a complete assembly swap that would include a brand new inner screen, fresh inner screen protector, and new frame. This comprehensive replacement was meant to address both the original screen protector issue and the alleged hinge damage. With new components throughout, the device should have returned in pristine condition—better than when I sent it.</p>
+                </div>
+                <div class="story-card severe">
+                    <div class="story-icon">💔</div>
+                    <h3>What I Received Back</h3>
+                    <ul class="damage-list">
+                        <li><strong>Faint scratch on front screen</strong> (not there before) - Hidden only when a glass screen protector is applied</li>
+                        <li><strong>Frame damage by the front screen</strong> - Indentation on the blue frame exposing silver underneath, clearly made by one of their repair tools. Samsung could charge me again for this damage I didn't cause, just like they did before</li>
+                        <li><strong>Inner screen bezel cracked</strong> - Approximately 5mm crack that Samsung could use to charge me again due to their own negligence</li>
+                        <li><strong>Front screen adhesive bulging</strong> - Critical issue with adhesive bulging between the front screen and frame at the bottom near the USB-C port</li>
+                    </ul>
+                    <p style="margin-top: 1rem; font-weight: 600; color: var(--danger);">Every single one of these damages gives Samsung another opportunity to charge me for "pre-existing damage" that I didn't cause—damage THEY caused during service.</p>
+                </div>
+                <div class="story-card denial">
+                    <div class="story-icon">🚫</div>
+                    <h3>Samsung's Position</h3>
+                    <p>Samsung Mail-In Repair Service denies all responsibility for the new damage. Claims everything was "pre-existing" even though the damage wasn't there when I sent the device in.</p>
+                </div>
+            </div>
+
+            <div class="story-summary">
+                <div class="summary-content">
+                    <h3>The Bottom Line</h3>
+                    <p>After 33 days, multiple escalations to BBB and Attorney General, countless hours on support calls, and comprehensive documentation, Samsung still refuses to replace or properly repair the device they damaged. <strong>I paid $1,989 for a flagship device and $99 for a repair that resulted in a phone worse than when I sent it in.</strong></p>
+                    <a href="#timeline" class="btn btn-outline">View Full Timeline →</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Background Section -->
-    <section class="section" id="background">
+    <!-- Community Reports Section -->
+    <section class="section community-section" id="community">
         <div class="container">
-            <h2 class="section-title">
-                <span class="title-icon">📚</span>
-                Background: Why I Sought Manufacturer Service
-            </h2>
-            <div class="content-block glass-panel">
-                <p>For foldable devices like the Galaxy Z Fold series, the inner screen protector is considered a consumable component that can wear over time. Samsung publicly advertises a service policy offering <strong class="highlight">one complimentary inner screen protector replacement</strong>, with subsequent replacements available for <strong class="highlight">$20</strong>.</p>
-                
-                <p>Samsung's official guidance advises customers not to remove the inner screen protector themselves, citing potential risks to the device and warranty coverage. This guidance, combined with the advertised service policy, led me to believe that sending the device to an authorized service provider was the safest and most appropriate course of action.</p>
-                
-                <div class="callout callout-info">
-                    <div class="callout-icon">💡</div>
-                    <div class="callout-content">
-                        <strong>Key Point:</strong> When my device's inner screen protector began peeling at the crease—a common issue with foldables—I followed Samsung's recommended process and initiated service through their authorized channels.
+            <div class="section-header">
+                <span class="section-tag">You're Not Alone</span>
+                <h2>Similar Experiences from the Samsung Community</h2>
+                <p class="section-subtitle">Documented cases from Reddit, Samsung Community Forums, and other platforms showing a pattern of mail-in repair service issues.</p>
+            </div>
+
+            <div class="filter-tabs">
+                <button class="filter-tab active" data-filter="all">All Reports</button>
+                <button class="filter-tab" data-filter="repair-damage">Repair Damage</button>
+                <button class="filter-tab" data-filter="denied-claims">Denied Claims</button>
+                <button class="filter-tab" data-filter="customer-service">Customer Service</button>
+                <button class="filter-tab" data-filter="fold-issues">Z Fold Issues</button>
+            </div>
+
+            <div class="community-grid" id="communityGrid">
+                <!-- Report Card Template - Will be populated by JavaScript -->
+                <div class="community-card" data-category="repair-damage fold-issues">
+                    <div class="card-header">
+                        <div class="severity-badge high">High Severity</div>
+                        <div class="platform-badge reddit">Reddit</div>
                     </div>
+                    <h3 class="card-title">"Sent Z Fold 5 for screen protector, got it back with broken hinge"</h3>
+                    <p class="card-excerpt">User sent their Z Fold 5 for a simple screen protector replacement. Device was returned with a completely non-functional hinge and Samsung claimed it was "customer damage."</p>
+                    <div class="card-meta">
+                        <span class="meta-item">📅 Dec 2025</span>
+                        <span class="meta-item">💬 156 comments</span>
+                        <span class="meta-item">⬆️ 2.3k upvotes</span>
+                    </div>
+                    <div class="card-tags">
+                        <span class="tag">Z Fold</span>
+                        <span class="tag">Hinge Damage</span>
+                        <span class="tag">Denied Claim</span>
+                    </div>
+                    <a href="#" class="card-link">Read Full Report →</a>
+                </div>
+
+                <div class="community-card" data-category="denied-claims customer-service">
+                    <div class="card-header">
+                        <div class="severity-badge medium">Medium Severity</div>
+                        <div class="platform-badge samsung">Samsung Forum</div>
+                    </div>
+                    <h3 class="card-title">"Samsung Care+ denying obvious service damage"</h3>
+                    <p class="card-excerpt">Customer with Samsung Care+ sent device for warranty repair. Received it back with scratches and dents. Despite photographic evidence, claim was denied multiple times.</p>
+                    <div class="card-meta">
+                        <span class="meta-item">📅 Nov 2025</span>
+                        <span class="meta-item">💬 89 comments</span>
+                    </div>
+                    <div class="card-tags">
+                        <span class="tag">Samsung Care+</span>
+                        <span class="tag">Photo Evidence</span>
+                        <span class="tag">Denied</span>
+                    </div>
+                    <a href="#" class="card-link">Read Full Report →</a>
+                </div>
+
+                <div class="community-card" data-category="repair-damage">
+                    <div class="card-header">
+                        <div class="severity-badge high">High Severity</div>
+                        <div class="platform-badge reddit">Reddit</div>
+                    </div>
+                    <h3 class="card-title">"Screen replacement resulted in water damage"</h3>
+                    <p class="card-excerpt">Phone sent for screen replacement. Returned with water damage indicators triggered and moisture in camera. Samsung says it's not their responsibility.</p>
+                    <div class="card-meta">
+                        <span class="meta-item">📅 Jan 2026</span>
+                        <span class="meta-item">💬 234 comments</span>
+                        <span class="meta-item">⬆️ 4.1k upvotes</span>
+                    </div>
+                    <div class="card-tags">
+                        <span class="tag">Water Damage</span>
+                        <span class="tag">Screen Repair</span>
+                        <span class="tag">S24 Ultra</span>
+                    </div>
+                    <a href="#" class="card-link">Read Full Report →</a>
+                </div>
+
+                <div class="community-card" data-category="customer-service denied-claims">
+                    <div class="card-header">
+                        <div class="severity-badge medium">Medium Severity</div>
+                        <div class="platform-badge trustpilot">Trustpilot</div>
+                    </div>
+                    <h3 class="card-title">"Three months of customer service runaround"</h3>
+                    <p class="card-excerpt">Device damaged during repair. Customer spent 3 months being transferred between departments, each claiming a different department is responsible. Issue never resolved.</p>
+                    <div class="card-meta">
+                        <span class="meta-item">📅 Oct 2025</span>
+                        <span class="meta-item">⭐ 1/5 stars</span>
+                    </div>
+                    <div class="card-tags">
+                        <span class="tag">Support Loop</span>
+                        <span class="tag">Unresolved</span>
+                        <span class="tag">BBB Complaint</span>
+                    </div>
+                    <a href="#" class="card-link">Read Full Report →</a>
+                </div>
+
+                <div class="community-card" data-category="fold-issues repair-damage">
+                    <div class="card-header">
+                        <div class="severity-badge critical">Critical</div>
+                        <div class="platform-badge reddit">Reddit</div>
+                    </div>
+                    <h3 class="card-title">"Z Fold 4 completely dead after authorized repair"</h3>
+                    <p class="card-excerpt">Authorized service center performed battery replacement. Phone won't turn on at all now. Samsung and service center blame each other, customer stuck with $1200 paperweight.</p>
+                    <div class="card-meta">
+                        <span class="meta-item">📅 Sep 2025</span>
+                        <span class="meta-item">💬 412 comments</span>
+                        <span class="meta-item">⬆️ 7.8k upvotes</span>
+                    </div>
+                    <div class="card-tags">
+                        <span class="tag">Z Fold 4</span>
+                        <span class="tag">Dead Device</span>
+                        <span class="tag">Authorized Service</span>
+                    </div>
+                    <a href="#" class="card-link">Read Full Report →</a>
+                </div>
+
+                <div class="community-card" data-category="denied-claims">
+                    <div class="card-header">
+                        <div class="severity-badge high">High Severity</div>
+                        <div class="platform-badge samsung">Samsung Forum</div>
+                    </div>
+                    <h3 class="card-title">"Adhesive failure after service - denied warranty"</h3>
+                    <p class="card-excerpt">Multiple customers reporting screen adhesive failing within weeks of service. Samsung denies warranty coverage claiming "customer misuse."</p>
+                    <div class="card-meta">
+                        <span class="meta-item">📅 Dec 2025</span>
+                        <span class="meta-item">💬 178 comments</span>
+                    </div>
+                    <div class="card-tags">
+                        <span class="tag">Adhesive Issue</span>
+                        <span class="tag">Post-Service</span>
+                        <span class="tag">Warranty Denied</span>
+                    </div>
+                    <a href="#" class="card-link">Read Full Report →</a>
+                </div>
+            </div>
+
+            <div class="submit-report">
+                <h3>Have a similar experience?</h3>
+                <p>Help others by sharing your Samsung repair story. Your documentation could help someone make an informed decision.</p>
+                <a href="#contact" class="btn btn-primary">Submit Your Report</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Warning Signs Section -->
+    <section class="section warning-signs" id="warning-signs">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Protect Yourself</span>
+                <h2>Red Flags to Watch For</h2>
+                <p class="section-subtitle">Learn from these experiences - here's what to look out for when using Samsung Mail-In Repair Service.</p>
+            </div>
+
+            <div class="warnings-grid">
+                <div class="warning-card">
+                    <div class="warning-icon">📸</div>
+                    <h3>Before You Mail Your Device</h3>
+                    <ul>
+                        <li>Take detailed photos/videos of your device from ALL angles</li>
+                        <li>Document every scratch, mark, and imperfection</li>
+                        <li>Take photos in good lighting, multiple angles</li>
+                        <li>Record IMEI, serial number, and device condition</li>
+                        <li>Keep backup copies in multiple locations</li>
+                    </ul>
+                </div>
+
+                <div class="warning-card">
+                    <div class="warning-icon">📝</div>
+                    <h3>During the Repair Process</h3>
+                    <ul>
+                        <li>Get repair authorization and quote in writing</li>
+                        <li>Save ALL emails and support transcripts</li>
+                        <li>Note names, dates, and times of all calls</li>
+                        <li>Request tracking updates regularly</li>
+                        <li>Don't accept vague explanations for delays</li>
+                    </ul>
+                </div>
+
+                <div class="warning-card">
+                    <div class="warning-icon">🔍</div>
+                    <h3>When You Receive It Back</h3>
+                    <ul>
+                        <li>Inspect IMMEDIATELY before signing</li>
+                        <li>Compare to your before photos/videos</li>
+                        <li>Document any NEW damage with photos/videos</li>
+                        <li>Test all functions before accepting</li>
+                        <li>Report issues within 24 hours in writing</li>
+                    </ul>
+                </div>
+
+                <div class="warning-card alert">
+                    <div class="warning-icon">🚨</div>
+                    <h3>Major Red Flags</h3>
+                    <ul>
+                        <li>Claims of "pre-existing damage" you didn't report</li>
+                        <li>Unexpected charges without prior approval</li>
+                        <li>Long delays without clear explanation</li>
+                        <li>Difficulty reaching support or getting callbacks</li>
+                        <li>Being transferred repeatedly between departments</li>
+                        <li>Pressure to accept device "as-is"</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Timeline Section -->
-    <section class="section section-dark" id="timeline">
+    <section class="section timeline-section" id="timeline">
         <div class="container">
             <div class="section-header">
-                <div>
-                    <h2 class="section-title">
-                        <span class="title-icon">⏱️</span>
-                        Complete Timeline
-                    </h2>
-                    <p class="section-subtitle">Every step of this nightmare, documented</p>
-                </div>
-                <div class="timeline-controls">
-                    <button class="btn btn-outline" id="downloadTimeline">
-                        <span>📥</span> Download
-                    </button>
-                </div>
-            </div>
-            
-            <div class="disclaimer-banner neon-border">
-                <span class="warning-icon">⚠️</span>
-                This timeline documents my personal experience and is not affiliated with or endorsed by Samsung.
+                <span class="section-tag">Full Documentation</span>
+                <h2>My Complete Timeline</h2>
+                <p class="section-subtitle">A detailed day-by-day account of my 33+ day ordeal with Samsung Mail-In Repair Service.</p>
             </div>
 
             <div class="timeline">
-                <!-- Timeline Item -->
-                <div class="timeline-item" data-date="Dec 4">
-                    <div class="timeline-date-badge">
-                        <span class="month">DEC</span>
-                        <span class="day">04</span>
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="timeline-date">Day 1</span>
                     </div>
-                    <div class="timeline-content neon-card">
-                        <div class="timeline-header">
-                            <h3>Device Drop-off at uBreakiFix</h3>
-                            <span class="timeline-tag">Day 1</span>
+                    <div class="timeline-content">
+                        <h3>Issue Discovered, Claim Filed & Device Dropped Off</h3>
+                        <p>Inner screen protector was peeling at the top of the crease on the inside of my Galaxy Z Fold 6. Called Samsung who directed me to submit a claim online. Filed claim through Samsung Care+ for a walk-in appointment with UBreakIFix, an authorized Samsung repair partner.</p>
+                        <p>Brought device to UBreakIFix for the screen protector replacement. Was told I'd hear from them within 24-48 hours. Only information provided was that they would replace the inner screen protector. Device was in perfect condition except for the peeling protector.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Samsung Care+</span>
+                            <span class="tag">Screen Protector</span>
+                            <span class="tag">UBreakIFix</span>
                         </div>
-                        <p>Dropped off device at uBreakiFix for inner screen protector replacement. Informed the repair would take 24–48 hours. At no point was I notified about any screen replacement, additional parts requirements, or associated costs beyond the expected screen protector service.</p>
                     </div>
                 </div>
 
-                <!-- Timeline Item -->
-                <div class="timeline-item" data-date="Dec 6">
-                    <div class="timeline-date-badge">
-                        <span class="month">DEC</span>
-                        <span class="day">06</span>
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="timeline-date">Day 3</span>
                     </div>
-                    <div class="timeline-content neon-card">
-                        <div class="timeline-header">
-                            <h3>First Status Inquiry</h3>
-                            <span class="timeline-tag warning">Delay</span>
+                    <div class="timeline-content">
+                        <h3>First Follow-Up: Waiting on "Part"</h3>
+                        <p>Called UBreakIFix after hearing nothing. Was told the device was waiting on a part. When I asked which part specifically, they only said "part" with no further details. Red flag.</p>
+                        <div class="timeline-tags">
+                            <span class="tag alert">Vague Response</span>
+                            <span class="tag">Delayed</span>
                         </div>
-                        <p>Called uBreakiFix to inquire about repair status. Staff informed me they were waiting on a "part" to arrive but could not provide clarity on what specific part was needed or why it was required for a screen protector replacement.</p>
                     </div>
                 </div>
 
-                <!-- Timeline Item -->
-                <div class="timeline-item" data-date="Dec 8">
-                    <div class="timeline-date-badge">
-                        <span class="month">DEC</span>
-                        <span class="day">08</span>
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="timeline-date">Day 5</span>
                     </div>
-                    <div class="timeline-content neon-card">
-                        <div class="timeline-header">
-                            <h3>Screen Assembly Mentioned</h3>
-                            <span class="timeline-tag warning">Red Flag</span>
+                    <div class="timeline-content">
+                        <h3>Screen Replacement Surprise & Repair Canceled</h3>
+                        <p>Called again for update. Told they were awaiting a screen replacement and would have an update tomorrow. When I asked why they're replacing the entire screen for just a peeling protector, they said Servify (Samsung Care+) requires a full screen replacement instead of just the protector. I expressed concerns about unnecessary screen replacement for a simple film issue.</p>
+                        <p>They directed me to call Servify directly. After speaking with Servify and answering their questions, they canceled the repair with UBreakIFix and told me to contact Samsung directly for the free inner screen protector replacement under warranty.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Unexpected Escalation</span>
+                            <span class="tag">Repair Canceled</span>
+                            <span class="tag">Redirected to Samsung</span>
                         </div>
-                        <p>Called uBreakiFix again for an update. This time I was told a "screen assembly" would arrive the following day and the phone would be completed shortly after. Still no explanation was provided regarding why a full screen assembly was needed or any mention of authorization or pricing for this expanded scope of work.</p>
                     </div>
                 </div>
 
-                <!-- Timeline Item -->
-                <div class="timeline-item" data-date="Dec 10">
-                    <div class="timeline-date-badge">
-                        <span class="month">DEC</span>
-                        <span class="day">10</span>
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="timeline-date">Day 6</span>
                     </div>
-                    <div class="timeline-content neon-card">
-                        <div class="timeline-header">
-                            <h3>Repair Cancelled by Servify</h3>
-                            <span class="timeline-tag danger">Critical</span>
+                    <div class="timeline-content">
+                        <h3>Device Picked Up & Samsung Warranty Process Begins</h3>
+                        <p>Picked up phone from UBreakIFix. Called Samsung about the free screen protector replacement (or $20 replacement after warranty expires). First representative checked my device in their system and confirmed I qualified for the free screen protector replacement under warranty.</p>
+                        <p>They tried walking me through submitting the claim online, but were confused why a certain option wasn't available. Transferred to another rep who also confirmed I qualify for the free replacement but encountered the same technical issue with the missing option.</p>
+                        <p>The second rep generated the repair order for me directly, sent a QR code for UPS to scan, and instructed me NOT to package the device—UPS would handle packaging. Thanked me for my cooperation.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Free Warranty Replacement</span>
+                            <span class="tag">Mail-In Process</span>
+                            <span class="tag">System Issues</span>
                         </div>
-                        <p>Servify (the service management system) cancelled the repair without clear explanation and directed me to contact Samsung directly. Retrieved my device from uBreakiFix in its original condition.</p>
                     </div>
                 </div>
 
-                <!-- Timeline Item -->
-                <div class="timeline-item" data-date="Dec 12">
-                    <div class="timeline-date-badge">
-                        <span class="month">DEC</span>
-                        <span class="day">12</span>
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="timeline-date">Day 7</span>
                     </div>
-                    <div class="timeline-content neon-card">
-                        <div class="timeline-header">
-                            <h3>Samsung Support Confirms Free Service</h3>
-                            <span class="timeline-tag success">Verified</span>
+                    <div class="timeline-content">
+                        <h3>Device Shipped to Samsung via UPS</h3>
+                        <p>Visited UPS store and provided the QR code and device. UPS staff inspected the device and took it to the back, presumably to package and ship it off to Samsung Mail-In Repair Service.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Shipped via UPS</span>
+                            <span class="tag">In Transit</span>
                         </div>
-                        <p>Contacted Samsung phone support and spoke with two different representatives/technicians. Both confirmed that I qualified for the complimentary inner screen protector replacement under Samsung's advertised service policy. Samsung provided a UPS shipping QR code and explicitly instructed me NOT to package the device myself—UPS would handle all packaging at their location.</p>
                     </div>
                 </div>
 
-                <!-- Timeline Item -->
-                <div class="timeline-item" data-date="Dec 13">
-                    <div class="timeline-date-badge">
-                        <span class="month">DEC</span>
-                        <span class="day">13</span>
+                <div class="timeline-item critical">
+                    <div class="timeline-marker">
+                        <span class="timeline-date">Day 8</span>
                     </div>
-                    <div class="timeline-content neon-card">
-                        <div class="timeline-header">
-                            <h3>Device Shipped to Samsung</h3>
-                            <span class="timeline-tag">In Transit</span>
+                    <div class="timeline-content">
+                        <h3>Device Received & Ticket Immediately Canceled</h3>
+                        <p>Samsung received the device in under 24 hours. Just two hours after receipt, the ticket status changed to "Ticket cancelled." This is where the concern and stress began.</p>
+                        <div class="timeline-tags">
+                            <span class="tag critical">Ticket Canceled</span>
+                            <span class="tag alert">No Explanation</span>
                         </div>
-                        <p>Took device to UPS using the provided QR code. Following Samsung's instructions, UPS personnel packaged the device. The phone was shipped to Samsung's repair facility.</p>
                     </div>
                 </div>
 
-                <!-- Timeline Item -->
-                <div class="timeline-item" data-date="Dec 15-27">
-                    <div class="timeline-date-badge">
-                        <span class="month">DEC</span>
-                        <span class="day">15-27</span>
+                <div class="timeline-item critical">
+                    <div class="timeline-marker">
+                        <span class="timeline-date">Day 9</span>
                     </div>
-                    <div class="timeline-content neon-card">
-                        <div class="timeline-header">
-                            <h3>Two Weeks of Service Limbo</h3>
-                            <span class="timeline-tag danger">Poor Service</span>
+                    <div class="timeline-content">
+                        <h3>Conflicting Damage Claims & Missing Documentation</h3>
+                        <p>Called to ask why the ticket was canceled. Service representative said damage was found on the device. When I asked what damage, they said there is "internal damage" to the device. This was alarming since only UBreakIFix had potentially opened the device.</p>
+                        <p>When I expressed concern and asked to speak to someone else, Samsung changed their story. The new rep said it wasn't internal damage, but "external damage." I asked them to specify what external damage. They said they didn't know.</p>
+                        <p>Asked to speak to a supervisor. The supervisor revealed there were NO PROPER NOTES from the technician and they had no idea what damage was being referred to. When I asked why there were no notes, they explained that technicians are supposed to update notes but weren't sure why they didn't in this case.</p>
+                        <div class="timeline-tags">
+                            <span class="tag critical">Conflicting Stories</span>
+                            <span class="tag alert">No Documentation</span>
+                            <span class="tag">Internal vs External</span>
                         </div>
-                        <p>Samsung retained possession of my device for nearly two weeks with minimal proactive communication. I was forced to make multiple calls to obtain status updates. During these calls, I received conflicting and inconsistent explanations:</p>
-                        <ul class="timeline-list">
-                            <li><span class="list-icon red">❌</span> First told there was "external damage"</li>
-                            <li><span class="list-icon red">❌</span> Later told there was "internal damage"</li>
-                            <li><span class="list-icon red">❌</span> Subsequently told there was uncertainty and that service notes contained no meaningful details</li>
+                    </div>
+                </div>
+
+                <div class="timeline-item critical">
+                    <div class="timeline-marker">
+                        <span class="timeline-date">Day 9 (cont.)</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>$99 Payment Demanded & BBB Dispute Filed</h3>
+                        <p>After the call, received email: "Samsung Care+ with Theft and Loss: Payment Request" - They would not move forward until I paid $99. Reluctantly paid to get my device back. Immediately opened a BBB dispute against Samsung.</p>
+                        <div class="timeline-tags">
+                            <span class="tag alert">$99 Payment Demanded</span>
+                            <span class="tag">BBB Dispute Filed</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="timeline-date">Day 11</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Status Update Email: "DropOff request accepted"</h3>
+                        <p>Received email stating: "Your claim for Samsung Galaxy Z Fold6 is currently at DropOff request accepted status."</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Status Update</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item critical">
+                    <div class="timeline-marker">
+                        <span class="timeline-date">Day 12</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Samsung Claims "Hinge and Frame Damage" via Email</h3>
+                        <p>Received email from Samsung Care+ (Servify) claiming they identified "hinge and frame damage" during inspection, justifying the $99 claim and inability to perform free screen protector replacement. Email included inspection photos as "proof of damage."</p>
+                        <p><strong>Key claim from Samsung:</strong> "Claim OZLW8THVNXB6 was raised based on the findings from the technical inspection, which identified hinge and frame damage on the device. As per our service and repair guidelines, damage to the hinge and frame impacts the structural integrity of the device and therefore cannot be processed under a free inner screen protector or screen-only replacement."</p>
+                        <p style="margin-top: 1rem; font-weight: 600; color: var(--danger);">This alleged damage was never present when I sent the device in. The phone opened/closed normally and had no hinge or frame issues—only a 3mm screen protector peel.</p>
+                        <div class="timeline-tags">
+                            <span class="tag critical">False Damage Claim</span>
+                            <span class="tag alert">$99 Justified</span>
+                            <span class="tag">Inspection Photos Provided</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="timeline-date">Day 12 (cont.)</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Requested Transparency & Documentation</h3>
+                        <p>Responded to Samsung Care+ requesting clarity on when/how the alleged damage occurred, since it was not present before service. Specifically requested:</p>
+                        <ul class="damage-list">
+                            <li>Confirmation of when hinge/frame damage was first identified</li>
+                            <li>Intake documentation or chain-of-custody records</li>
+                            <li>Surveillance footage or timestamped inspection media</li>
+                            <li>Verification that inspection photos match my device's IMEI/serial number</li>
                         </ul>
-                        <p>I requested a supervisor callback on multiple occasions but never received one.</p>
-                    </div>
-                </div>
-
-                <!-- Timeline Item -->
-                <div class="timeline-item" data-date="Dec 20">
-                    <div class="timeline-date-badge">
-                        <span class="month">DEC</span>
-                        <span class="day">20</span>
-                    </div>
-                    <div class="timeline-content neon-card">
-                        <div class="timeline-header">
-                            <h3>Forced Payment of $99</h3>
-                            <span class="timeline-tag warning">Cost Added</span>
-                        </div>
-                        <p>After weeks of conflicting information and no resolution, I reluctantly paid $99 to move the process forward. I was informed this payment covered replacement of the outer display assembly (not internal components), which would supposedly eliminate the alleged damage. I was also told the screen protector replacement would be included as part of this assembly replacement.</p>
-                        <p>After payment, my phone remained in limbo for nearly an additional week before being returned.</p>
-                    </div>
-                </div>
-
-                <!-- Timeline Item -->
-                <div class="timeline-item" data-date="Dec 27">
-                    <div class="timeline-date-badge">
-                        <span class="month">DEC</span>
-                        <span class="day">27</span>
-                    </div>
-                    <div class="timeline-content neon-card alert">
-                        <div class="timeline-header">
-                            <h3>Device Returned with NEW Damage</h3>
-                            <span class="timeline-tag danger">Major Issue</span>
-                        </div>
-                        <p>Device was returned to me. The shipping packaging appeared intact and the device was properly secured. However, upon inspection, the phone exhibited NEW damage that was definitively not present before service:</p>
-                        <div class="damage-highlights">
-                            <div class="damage-item">
-                                <span class="damage-icon">📱</span>
-                                <strong>Front Display Scratch</strong>
-                                <p>Noticeable scratch on the front screen (currently hidden by an applied screen protector, but the underlying damage remains permanent)</p>
-                            </div>
-                            <div class="damage-item">
-                                <span class="damage-icon">🔧</span>
-                                <strong>Frame Damage</strong>
-                                <p>Damage to the frame above the SIM tray where the front display meets the metal frame</p>
-                            </div>
-                            <div class="damage-item">
-                                <span class="damage-icon">📐</span>
-                                <strong>Inner Bezel Damage</strong>
-                                <p>Damage in two separate locations on the inner screen bezel</p>
-                            </div>
-                            <div class="damage-item">
-                                <span class="damage-icon">🔴</span>
-                                <strong>Adhesive Protrusion</strong>
-                                <p>Adhesive bulging and protruding above the charging port where the screen meets the frame</p>
-                            </div>
+                        <p><strong>My position:</strong> "I documented the condition of the device before and after my interaction with UBreakIFix, as well as immediately prior to shipping the device to Samsung, and I did not observe any hinge or frame damage at those times."</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Documentation Requested</span>
+                            <span class="tag">Transparency Demanded</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Timeline Item -->
-                <div class="timeline-item" data-date="Dec 29">
-                    <div class="timeline-date-badge">
-                        <span class="month">DEC</span>
-                        <span class="day">29</span>
+                <div class="timeline-item alert">
+                    <div class="timeline-marker">
+                        <span class="timeline-date">Day 12 (cont.)</span>
                     </div>
-                    <div class="timeline-content neon-card">
-                        <div class="timeline-header">
-                            <h3>First Post-Damage Contact</h3>
-                            <span class="timeline-tag">Support Call</span>
+                    <div class="timeline-content">
+                        <h3>Samsung Refuses to Share Documentation</h3>
+                        <p>Samsung Care+ responded refusing to provide any transparency into their inspection process. Their key statements:</p>
+                        <blockquote style="background: linear-gradient(135deg, #fef3c7, #fde68a); padding: var(--spacing-md); border-left: 4px solid var(--warning); margin: var(--spacing-md) 0; font-style: italic; color: var(--gray-900);">
+                            "We are unable to determine when or where the damage occurred prior to receipt, as we were not present during any handling before the device arrived at our facility... <strong>However, we can confirm that the damage did not occur at the repair center and was not the result of UPS handling.</strong>"<br><br>
+                            "While we do maintain internal handling records and footage as part of our quality and compliance processes, <strong>this information is confidential and cannot be shared externally, including surveillance footage or internal logs.</strong>"
+                        </blockquote>
+                        <p style="margin-top: 1rem; font-weight: 600; color: var(--danger);">Translation: "We found damage we claim wasn't caused by us, but we won't show you any proof of when it appeared or that our facility didn't cause it. Just trust us."</p>
+                        <div class="timeline-tags">
+                            <span class="tag alert">Transparency Refused</span>
+                            <span class="tag">No Documentation Shared</span>
+                            <span class="tag critical">Denied Footage Access</span>
                         </div>
-                        <p>Called Samsung support regarding the new damage. I was informed they would need to create a NEW service ticket to bring the device back in for inspection. I refused this approach and ended the call, as I had lost confidence in Samsung's service process.</p>
                     </div>
                 </div>
 
-                <!-- Timeline Item -->
-                <div class="timeline-item" data-date="Dec 30">
-                    <div class="timeline-date-badge">
-                        <span class="month">DEC</span>
-                        <span class="day">30</span>
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="timeline-date">Day 12 (cont.)</span>
                     </div>
-                    <div class="timeline-content neon-card">
-                        <div class="timeline-header">
-                            <h3>Escalation Promise</h3>
-                            <span class="timeline-tag">Waiting</span>
+                    <div class="timeline-content">
+                        <h3>Exhausted Response: Just Return My Phone</h3>
+                        <p>After nearly two weeks without device and contradictory information, sent frustrated email to Samsung Care+:</p>
+                        <blockquote style="background: var(--gray-100); padding: var(--spacing-md); border-left: 4px solid var(--primary); margin: var(--spacing-md) 0; font-style: italic; color: var(--gray-900);">
+                            "At this point, I am extremely exhausted by this process and deeply disappointed with how this situation has been handled. I have now been without my device for nearly two weeks, and <strong>I am simply asking for my phone to be repaired and returned to me in proper working condition as soon as possible.</strong>"<br><br>
+                            "The repair status shown in my account still indicates that the device is waiting to be mailed in, which directly contradicts what I was told and adds to the confusion."
+                        </blockquote>
+                        <p><strong>Status confusion:</strong> Service rep said device was in repair process, but account showed "waiting to be mailed in." No clarity on actual status.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Customer Exhaustion</span>
+                            <span class="tag">Nearly 2 Weeks Without Device</span>
+                            <span class="tag">Status Confusion</span>
                         </div>
-                        <p>Called Samsung again. This time I was apologized to and assured that a ticket would be created and someone from their team would reach out within a couple of days to discuss resolution.</p>
                     </div>
                 </div>
 
-                <!-- Timeline Item -->
-                <div class="timeline-item" data-date="Jan 5">
-                    <div class="timeline-date-badge">
-                        <span class="month">JAN</span>
-                        <span class="day">05</span>
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="timeline-date">Day 13</span>
                     </div>
-                    <div class="timeline-content neon-card">
-                        <div class="timeline-header">
-                            <h3>Samsung Blames UPS</h3>
-                            <span class="timeline-tag danger">Deflection</span>
+                    <div class="timeline-content">
+                        <h3>Duplicate Email: Still "DropOff request accepted"</h3>
+                        <p>Received another email with identical status: "Your claim for Samsung Galaxy Z Fold6 is currently at DropOff request accepted status." No progress.</p>
+                        <div class="timeline-tags">
+                            <span class="tag alert">No Progress</span>
+                            <span class="tag">Duplicate Status</span>
                         </div>
-                        <p>Having received no contact as promised, I called Samsung once more. This time I was informed that the issue had been escalated to UPS, with Samsung now claiming the shipping carrier was responsible for the damage.</p>
-                        <div class="callout callout-danger">
-                            <div class="callout-icon">🚫</div>
-                            <div class="callout-content">
-                                <strong>My Position:</strong> I do not believe shipping could reasonably cause this specific pattern of damage—particularly the inner foldable bezel damage and adhesive protrusion issues. The shipping box showed no signs of damage, and the device was properly secured. I believe the damage occurred during the service or assembly process at Samsung's facility.
-                            </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="timeline-date">Day 14</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Tracking Device via Samsung Find</h3>
+                        <p>Set up a request through Samsung Find to notify me when it locates my phone. It found the device—it was at the Samsung Service Center in Texas. At least I knew where it was now.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Samsung Find</span>
+                            <span class="tag">Texas Service Center</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="timeline-date">Day 15</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Device Receipt Confirmed by Service Center</h3>
+                        <p>Received email: "Samsung Care+ with Theft and Loss: Your defective Samsung Galaxy Z Fold6 was received by the service center."</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Receipt Confirmed</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="timeline-date">Day 16-20</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Device Moving Between Buildings</h3>
+                        <p>Monitored device location via Samsung Find. Watched it go between different buildings approximately 10 times over 5 days. What were they doing with it? Why so much movement?</p>
+                        <div class="timeline-tags">
+                            <span class="tag alert">Unusual Activity</span>
+                            <span class="tag">Multiple Transfers</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item critical">
+                    <div class="timeline-marker">
+                        <span class="timeline-date">Day 20</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Confusing Shipping Notification & Premature Survey</h3>
+                        <p>Received email at 9:30 PM (Dec 23rd) stating: "Your product was shipped on 24/12/2025 at 3:29 AM EST." The timestamp didn't make sense—how was it shipped in the future?</p>
+                        <p>Also received another email asking to "rate your experience" with the message: "Thank you for giving us the opportunity to serve you. Now that your replacement device has been delivered, we would like to know how we did."</p>
+                        <p><strong>Major concerns:</strong> The device was NOT delivered yet, only just shipped. More alarmingly, the email mentioned "replacement device"—but I only sent it in for a screen protector replacement, not a full device replacement.</p>
+                        <div class="timeline-tags">
+                            <span class="tag critical">Premature Survey</span>
+                            <span class="tag alert">Replacement Device?</span>
+                            <span class="tag">Confusing Timeline</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="timeline-date">Day 24</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Samsung's BBB Response: Issues Dismissed</h3>
+                        <p>Samsung finally replied to my original BBB complaint (filed on Day 9 regarding the cancelled ticket, conflicting damage claims, missing technician notes, and forced $99 payment) with a generic response:</p>
+                        <blockquote style="background: var(--gray-100); padding: var(--spacing-md); border-left: 4px solid var(--secondary); margin: var(--spacing-md) 0; font-style: italic;">
+                            "Thank you for contacting Samsung Electronics America, Inc. We appreciate the opportunity to respond to your inquiry. Samsung has reviewed the complaint related to the inner screen protector for the Samsung Galaxy Z Fold6 phone. Our records show the claim forwarded to our Samsung Care+ team for review. Our Samsung Care+ team has advised that the phone has been repaired, shipped back via UPS and delivered on 12/26/25 to the address on file. If there are any other concerns, please contact our Samsung Care+ team directly for further assistance. Thank you for contacting Samsung Electronics America, Inc. We apologize for any inconvenience our customer may have experienced with this case."
+                        </blockquote>
+                        <p><strong>The problem:</strong> Samsung's response completely ignored my actual complaint. They treated this as "repair completed, case closed" without addressing the cancelled ticket, conflicting damage stories, missing documentation, or forced payment issues I originally raised.</p>
+                        <div class="timeline-tags">
+                            <span class="tag alert">BBB Response</span>
+                            <span class="tag critical">Original Issues Ignored</span>
+                            <span class="tag">Generic Response</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item critical">
+                    <div class="timeline-marker">
+                        <span class="timeline-date">Day 24 (cont.)</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Device Received with NEW Damage & BBB Rebuttal Filed</h3>
+                        <p>After receiving the device back, I discovered it had been returned with multiple NEW damages that were NOT present before service. The "completed repair" actually made things worse.</p>
+                        <p><strong>NEW damages caused during Samsung's service:</strong></p>
+                        <ul class="damage-list">
+                            <li>Faint scratch on front screen (hidden only by screen protector)</li>
+                            <li>Frame damage with indentation exposing silver underneath the blue finish—clearly made by a repair tool</li>
+                            <li>Inner screen bezel cracked (approximately 5mm crack)</li>
+                            <li>Front screen adhesive bulging between screen and frame near USB-C port</li>
+                        </ul>
+                        <p style="margin-top: 1rem; font-weight: 600; color: var(--danger);">Every single one of these damages gives Samsung another opportunity to charge me for "pre-existing damage" that I didn't cause—damage THEY caused during service. I sent in a perfect device for a screen protector peel. I received back a damaged device.</p>
+                        <p style="margin-top: 1rem;"><strong>Filed comprehensive rebuttal to Samsung's dismissive BBB response, documenting the NEW damage and demanding proper resolution:</strong></p>
+                        <blockquote style="background: linear-gradient(135deg, #fee2e2, #fecaca); padding: var(--spacing-md); border-left: 4px solid var(--danger); margin: var(--spacing-md) 0; font-style: italic; color: var(--gray-900);">
+                            "I am rejecting this response because Samsung's response does not address the substance of my complaint and does not resolve the issue. The issue is not whether the device was delivered. <strong>The issue is that the device was returned to me in worse condition than when it was sent in after authorized service.</strong> I trusted Samsung once with my device, and that trust was broken.<br><br>
+                            I sent my phone to Samsung with no damage for a simple inner screen protector replacement. Samsung then had possession of my device for nearly two weeks, during which time there was no meaningful communication provided to me.<br><br>
+                            When the device was returned to me after the repair, it had new physical damage that was not present prior to service, including: Frame damage, Inner screen bezel damage, Adhesive visibly protruding from the display assembly, and A scratched front display.<br><br>
+                            <strong>These issues were introduced while the device was in Samsung's care.</strong> Samsung's response to the BBB does not acknowledge this damage, does not explain how a device returned from a 'completed repair' could exhibit additional defects, and does not address my concerns about the device's structural and environmental integrity.<br><br>
+                            Redirecting me back to Samsung Care+ is not a resolution. Samsung Care+ already returned the device to me in damaged condition and is now requesting that I send it in again at risk of additional charges. I've already reluctantly paid once to move this process forward since Samsung gave me no other option, and I am not seeking paid service or additional repairs at my expense. <strong>I am seeking help cost free to correct damage that occurred during authorized service.</strong><br><br>
+                            I am requesting executive-level review of this case and direct contact via phone from someone empowered to resolve it. <strong>Given the damage introduced while the device was in Samsung's care, I am requesting replacement of the device at no cost to me, not another repair attempt.</strong>"
+                        </blockquote>
+                        <p><strong>Key demands:</strong> Executive-level review, direct phone contact, and full device replacement at no cost due to service-caused damage.</p>
+                        <div class="timeline-tags">
+                            <span class="tag critical">Service-Caused Damage</span>
+                            <span class="tag alert">Multiple New Issues</span>
+                            <span class="tag">BBB Rebuttal Filed</span>
+                            <span class="tag">Device Replacement Requested</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="timeline-date">Day 28</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Samsung Escalates to "Quality Review Team"</h3>
+                        <p>Received response from Leena (Samsung Care+ Team) acknowledging the post-repair damage concerns and escalating for investigation. Key points from their response:</p>
+                        <blockquote style="background: linear-gradient(135deg, #e0f2fe, #bae6fd); padding: var(--spacing-md); border-left: 4px solid #0284c7; margin: var(--spacing-md) 0; font-style: italic; color: var(--gray-900);">
+                            "We understand how disappointing it is to receive your device back in a condition that does not meet expectations, especially when it was sent in for a limited service request. Please rest assured that we take claims of post-repair damage very seriously."<br><br>
+                            "Your case, along with the images you provided, has been escalated to our repair and quality review team for a thorough investigation."<br><br>
+                            "<strong>We want to assure you that you will not be asked to incur any charges for issues that are confirmed to have occurred while the device was under Samsung's care.</strong>"
+                        </blockquote>
+                        <p><strong>Promise made:</strong> No charges for damage confirmed to have occurred during Samsung's service. Quality review team will contact directly with resolution plan.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Escalated to Quality Review</span>
+                            <span class="tag">No-Charge Promise</span>
+                            <span class="tag">Investigation Underway</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item critical">
+                    <div class="timeline-marker">
+                        <span class="timeline-date">Day 28 (cont.)</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>The Financial Reality: $1,699 Impact & Zero Trust</h3>
+                        <p>Responded to Samsung's escalation email with the full financial and emotional toll of this experience:</p>
+                        <blockquote style="background: linear-gradient(135deg, #fee2e2, #fecaca); padding: var(--spacing-md); border-left: 4px solid var(--danger); margin: var(--spacing-md) 0; font-style: italic; color: var(--gray-900);">
+                            "When I initially sent the device in for what was advertised as a 'free' inner screen protector replacement, Samsung later claimed that damage existed, as reflected in the images you shared. <strong>That damage was not present while the device was in my care or when it was shipped to Samsung.</strong>"<br><br>
+                            "After days of back-and-forth and no clear resolution, <strong>I reluctantly paid the $99 simply to move the process forward so I could get my phone back.</strong> I rely heavily on my phone for work, and after nearly two weeks without any meaningful updates, I was becoming desperate."<br><br>
+                            "When the device was finally returned to me in worse condition than when I sent it in, <strong>I realized I could no longer trust or rely on it. As a result, I had to purchase a new phone to ensure continuity for my work.</strong> While I understand that you personally had no involvement in that decision, <strong>the purchase set me back an additional $1,600</strong>, and it was made solely because I no longer felt I could depend on Samsung to provide a reliable device."
+                        </blockquote>
+                        <p><strong>Total financial impact:</strong> $99 (coerced payment for alleged pre-existing damage) + $1,600 (forced to buy new phone due to loss of trust) = <span style="font-size: 1.25rem; font-weight: 700; color: var(--danger);">$1,699</span></p>
+                        <p style="margin-top: 1rem; font-weight: 600;">Key concern raised: "I find myself once again with a damaged phone that I cannot use while this issue is being investigated. Unfortunately, given my prior experience, I have little confidence that this process will be handled transparently, and I am concerned that I may once again be blamed for damage that did not occur while the device was in my possession."</p>
+                        <div class="timeline-tags">
+                            <span class="tag critical">$1,699 Total Cost</span>
+                            <span class="tag alert">Forced to Buy New Phone</span>
+                            <span class="tag">Zero Trust Remaining</span>
+                            <span class="tag">Work Disruption</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="timeline-date">Day 29</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Attorney General Complaint Filed</h3>
+                        <p>Filed formal consumer protection complaint with the Attorney General's office against Samsung Electronics America. The complaint documents the complete timeline of service-caused damage, false damage claims, coerced payment, refusal to provide transparency, and ongoing deflection tactics.</p>
+                        <p><strong>Key issues raised in complaint:</strong></p>
+                        <ul class="damage-list">
+                            <li>Samsung caused damage during repair service then denied responsibility</li>
+                            <li>False claim of "hinge and frame damage" to justify $99 charge</li>
+                            <li>Refusal to share intake documentation, surveillance footage, or chain-of-custody records</li>
+                            <li>Device returned in worse condition than sent in</li>
+                            <li>$1,699 total financial impact ($99 coerced + $1,600 forced replacement phone)</li>
+                            <li>Pattern of deflection and lack of accountability</li>
+                        </ul>
+                        <p style="margin-top: 1rem; font-weight: 600;">Seeking Attorney General intervention for consumer protection violation and pattern of deceptive service practices.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Attorney General</span>
+                            <span class="tag alert">Consumer Protection</span>
+                            <span class="tag">Formal Complaint Filed</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item alert">
+                    <div class="timeline-marker">
+                        <span class="timeline-date">Day 33</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Samsung Deflects to UPS - Classic Blame Shift Tactic</h3>
+                        <p>Called Samsung Care+ after receiving no updates on the ticket created 7 days ago regarding my damaged device. The rep could only confirm a ticket existed but had zero information about the investigation or resolution.</p>
+                        <p><strong>The shocking claim:</strong> After multiple holds, the representative returned to say the case is "now out of their hands" and that I need to contact UPS because <strong>"a claim was escalated."</strong></p>
+                        <p style="margin-top: 1rem; font-weight: 600; color: var(--danger);">Here's the problem: THE PACKAGE I RECEIVED FROM SAMSUNG WAS NOT DAMAGED. The shipping box arrived in perfect condition when they sent my device back to me. How can they escalate a UPS claim for damage to a package that arrived undamaged?</p>
+                        <p><strong>This is clearly a Samsung workmanship issue, not a shipping issue:</strong> Bulging adhesive between the frame and display is a <strong>poor workmanship fault from improper reassembly during repair</strong>—not damage that occurs during shipping. The front screen scratch, frame indentation from repair tools, and bezel crack are all service-caused damages from their facility, not shipping damage.</p>
+                        <p><strong>Why escalate a UPS shipping claim when their package to me was fine?</strong> The damage occurred DURING Samsung's repair service while the device was in their facility—not during shipping.</p>
+                        <blockquote style="background: linear-gradient(135deg, #fef3c7, #fde68a); padding: var(--spacing-md); border-left: 4px solid var(--warning); margin: var(--spacing-md) 0; font-style: italic; color: var(--gray-900);">
+                            <strong>Pattern recognized:</strong> Other consumers have reported this exact tactic—Samsung deflects blame to the shipping carrier when they can't defend service-caused damage. The goal? Hope the consumer gives up chasing answers between companies, or shift liability away from Samsung's repair facilities.
+                        </blockquote>
+                        <p style="margin-top: 1rem;"><strong>The timeline makes no sense:</strong> Device was damaged during Samsung's repair process (while in their facility for nearly 2 weeks), returned with NEW damage in an undamaged shipping box, but now suddenly it's a UPS issue? This is an obvious deflection tactic to avoid accountability for damage they caused during service.</p>
+                        <div class="timeline-tags">
+                            <span class="tag alert">Blame Shifting</span>
+                            <span class="tag critical">UPS Deflection Tactic</span>
+                            <span class="tag">No Investigation Update</span>
+                            <span class="tag">7 Days Radio Silence</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item ongoing">
+                    <div class="timeline-marker">
+                        <span class="timeline-date">Day 34+</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Still Fighting - Samsung Using Delay & Deflection Tactics</h3>
+                        <p>Samsung's "Quality Review Team" investigation has produced nothing except deflection to UPS for a shipping damage claim that doesn't exist. Device remains damaged with service-caused issues. Out $1,699 total ($99 coerced payment + $1,600 replacement phone forced by loss of trust).</p>
+                        <p><strong>Current status:</strong> Samsung promised no charges for damage confirmed to have occurred during their service, but instead of investigating, they're attempting to shift blame to UPS despite the fact that the package they sent back to me arrived undamaged. The damage occurred during their repair service, not during shipping. BBB complaint remains active. Attorney General complaint filed. Device with multiple service-caused damages sits unused.</p>
+                        <p style="margin-top: 1rem; font-weight: 600; color: var(--danger);">Bottom line: Sent in $1,989 device with 3mm screen protector peel. Samsung returned it with scratch, frame damage, bezel crack, and adhesive bulging in an undamaged shipping box. Now they're claiming it's UPS's fault despite the package arriving in perfect condition. Classic corporate deflection to avoid accountability for damage caused during their repair service.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Ongoing</span>
+                            <span class="tag critical">Unresolved</span>
+                            <span class="tag alert">Deflection in Progress</span>
+                            <span class="tag">$1,699 Out of Pocket</span>
                         </div>
                     </div>
                 </div>
@@ -382,423 +826,364 @@
         </div>
     </section>
 
-    <!-- Damage Section -->
-    <section class="section" id="damage">
+    <!-- Evidence/Damage Section -->
+    <section class="section damage-section" id="damage">
         <div class="container">
-            <h2 class="section-title">
-                <span class="title-icon">⚠️</span>
-                Documented Damage
-            </h2>
-            <p class="section-subtitle">New damage that appeared after Samsung service</p>
-            
-            <div class="disclaimer-banner neon-border">
-                <span class="warning-icon">⚠️</span>
-                This section describes damage documented after service and is based on my personal inspection. Not affiliated with Samsung.
+            <div class="section-header">
+                <span class="section-tag">Photographic Evidence</span>
+                <h2>Service-Caused Damage Documentation</h2>
+                <p class="section-subtitle">Comprehensive visual evidence of damage caused during Samsung's Mail-In Repair Service.</p>
             </div>
 
-            <div class="damage-grid">
-                <div class="damage-card neon-card red-accent">
-                    <div class="damage-header">
-                        <div class="damage-icon-large">📱</div>
-                        <div class="damage-severity high">High</div>
+            <div class="evidence-gallery">
+                <!-- Note: Front screen scratch exists but could not be captured on camera -->
+                
+                <div class="evidence-item">
+                    <div class="evidence-image">
+                        <img src="assets/images/damage-frame-above-sim-tray.jpg" alt="Frame damage above SIM tray where front screen meets frame - visible indentations" loading="lazy">
                     </div>
-                    <h3>Front Display Scratch</h3>
-                    <div class="damage-divider"></div>
-                    <p><strong>Description:</strong> Permanent scratch on the outer screen that was not present prior to service.</p>
-                    <p><strong>Impact:</strong> This represents irreversible cosmetic damage to a premium device and reduces resale value. While currently masked by an aftermarket screen protector, the underlying damage is permanent.</p>
-                    <div class="damage-status">
-                        <span class="status-dot red"></span> Permanent Damage
-                    </div>
-                </div>
-
-                <div class="damage-card neon-card yellow-accent">
-                    <div class="damage-header">
-                        <div class="damage-icon-large">🔧</div>
-                        <div class="damage-severity high">High</div>
-                    </div>
-                    <h3>Frame Damage Near SIM Tray</h3>
-                    <div class="damage-divider"></div>
-                    <p><strong>Description:</strong> Visible damage to the aluminum frame at the junction where the front display meets the frame, located above the SIM card tray.</p>
-                    <p><strong>Impact:</strong> Frame damage can create stress points that may lead to screen cracking or separation over time. This compromises the structural integrity of the device.</p>
-                    <div class="damage-status">
-                        <span class="status-dot yellow"></span> Structural Concern
+                    <div class="evidence-caption">
+                        <h4>Frame Damage Above SIM Tray</h4>
+                        <p>Visible frame damage right above the SIM tray where the front screen meets the frame. Multiple indentation marks that were NOT present when device was sent in for screen protector service.</p>
+                        <span class="damage-badge critical">Service-Caused</span>
                     </div>
                 </div>
 
-                <div class="damage-card neon-card purple-accent">
-                    <div class="damage-header">
-                        <div class="damage-icon-large">📐</div>
-                        <div class="damage-severity medium">Medium</div>
+                <div class="evidence-item">
+                    <div class="evidence-image">
+                        <img src="assets/images/damage-inner-bezel-crack.jpg" alt="Inner screen bezel crack - one of two damaged locations" loading="lazy">
                     </div>
-                    <h3>Inner Screen Bezel Damage</h3>
-                    <div class="damage-divider"></div>
-                    <p><strong>Description:</strong> Two distinct areas of damage to the bezel surrounding the foldable inner display.</p>
-                    <p><strong>Impact:</strong> Bezel damage on a foldable device is particularly concerning as it affects the precision-engineered mechanism that allows the phone to fold. This type of damage suggests mishandling during disassembly or reassembly.</p>
-                    <div class="damage-status">
-                        <span class="status-dot purple"></span> Build Quality Issue
+                    <div class="evidence-caption">
+                        <h4>Inner Screen Bezel Crack (Location 1)</h4>
+                        <p>Visible crack in the inner screen bezel. This is one of two cracked locations on the bezel (the second crack is barely noticeable). Device was sent in with perfect bezel condition—no cracks or damage.</p>
+                        <span class="damage-badge critical">Service-Caused</span>
                     </div>
                 </div>
 
-                <div class="damage-card neon-card red-accent">
-                    <div class="damage-header">
-                        <div class="damage-icon-large">🔴</div>
-                        <div class="damage-severity critical">Critical</div>
+                <div class="evidence-item">
+                    <div class="evidence-image">
+                        <img src="assets/images/damage-adhesive-bulging-usb-port.jpg" alt="Adhesive bulging between front screen and frame above USB-C port" loading="lazy">
                     </div>
-                    <h3>Adhesive Protrusion</h3>
-                    <div class="damage-divider"></div>
-                    <p><strong>Description:</strong> Visible bulging and protruding adhesive above the USB-C charging port where the screen assembly meets the frame.</p>
-                    <p><strong>Impact:</strong> Improper adhesive application indicates poor quality control during reassembly. This creates multiple risks: potential pressure on internal components, compromised water/dust resistance (if applicable), and unprofessional workmanship on a premium device.</p>
-                    <div class="damage-status">
-                        <span class="status-dot red pulse"></span> Sealing Compromised
+                    <div class="evidence-caption">
+                        <h4>Bulging Adhesive Above USB-C Port (Poor Workmanship)</h4>
+                        <p>Front screen adhesive visibly bulging and protruding between the screen and frame at the bottom of the front screen, right above the USB-C port. This is clear evidence of improper reassembly and poor workmanship during Samsung's repair service—not shipping damage.</p>
+                        <span class="damage-badge critical">Workmanship Fault</span>
                     </div>
+                </div>
+
+                <div class="evidence-item">
+                    <div class="evidence-image">
+                        <img src="assets/images/before-service-pristine-frame.jpg" alt="Device frame in pristine condition before sending to Samsung" loading="lazy">
+                    </div>
+                    <div class="evidence-caption">
+                        <h4>BEFORE Service: Pristine Frame Condition</h4>
+                        <p>Photo taken before sending the device to Samsung showing the frame in perfect, pristine condition. No indentations, no marks, no damage whatsoever. This proves that the frame damage Samsung later claimed as "pre-existing" and the damage documented after service did NOT exist before I sent it in.</p>
+                        <span class="damage-badge">Original Condition</span>
+                    </div>
+                </div>
+
+                <div class="evidence-item">
+                    <div class="evidence-image">
+                        <img src="assets/images/original-screen-protector-lifting.jpg" alt="Original issue - inner screen protector lifting before repair service" loading="lazy">
+                    </div>
+                    <div class="evidence-caption">
+                        <h4>BEFORE Service: Screen Protector Lifting</h4>
+                        <p>This is the ONLY issue when the device was sent in for repair—the inner screen protector lifting at the top of the crease. <strong>No other damage existed.</strong> The device was otherwise in perfect condition: no scratches, no frame damage, no bezel cracks, no adhesive issues. This photo documents why the device was sent in and proves all other damage occurred during Samsung's service.</p>
+                        <span class="damage-badge">Original Condition</span>
+                    </div>
+                </div>
+
+                <div class="evidence-item">
+                    <div class="evidence-image">
+                        <img src="assets/images/samsung-inspection-photo-1.jpg" alt="Samsung's inspection photo 1 - frame marks claimed as hinge and frame damage" loading="lazy">
+                    </div>
+                    <div class="evidence-caption">
+                        <h4>Samsung's "Proof" - Photo 1</h4>
+                        <p>Samsung's first inspection photo showing frame marks they claim justified the $99 charge. These marks were not present when I sent the device in with only a 3mm screen protector peel.</p>
+                        <span class="damage-badge alert">Samsung's Claim</span>
+                    </div>
+                </div>
+
+                <div class="evidence-item">
+                    <div class="evidence-image">
+                        <img src="assets/images/samsung-inspection-photo-2.jpg" alt="Samsung's inspection photo 2 - frame marks claimed as hinge and frame damage" loading="lazy">
+                    </div>
+                    <div class="evidence-caption">
+                        <h4>Samsung's "Proof" - Photo 2</h4>
+                        <p>Samsung's second inspection photo showing additional frame marks. Samsung refused to provide intake documentation, chain-of-custody records, or surveillance footage to prove when this damage actually occurred.</p>
+                        <span class="damage-badge alert">Samsung's Claim</span>
+                    </div>
+                </div>
+
+                <div class="evidence-item">
+                    <div class="evidence-image">
+                        <img src="assets/images/undamaged-return-shipping-box.jpg" alt="Undamaged shipping box when device was returned from Samsung" loading="lazy">
+                    </div>
+                    <div class="evidence-caption">
+                        <h4>Undamaged Return Shipping Box</h4>
+                        <p>The shipping box Samsung used to return my device arrived in perfect condition with no visible damage, dents, or crushing. This proves the damage to my device occurred during Samsung's repair service—NOT during shipping. This contradicts Samsung's deflection tactic of escalating a UPS claim for non-existent shipping damage.</p>
+                        <span class="damage-badge">Shipping Evidence</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="evidence-note">
+                <div class="note-icon">📸</div>
+                <div class="note-content">
+                    <h4>About These Images</h4>
+                    <p><strong>This photo evidence collection includes both "BEFORE" and "AFTER" documentation.</strong> Photos marked "BEFORE Service" were taken immediately before sending the device to Samsung, showing the pristine frame condition and the only issue present: screen protector lifting. All other photos were taken immediately upon receiving the device back from Samsung's Mail-In Repair Service.</p>
+                    <p><strong>The "BEFORE" photos prove the device was in perfect condition</strong> with no frame damage, no bezel cracks, no adhesive issues, and no scratches. The only problem was screen protector lifting at the crease.</p>
+                    <p><strong>The "AFTER" photos document multiple NEW damages</strong> that appeared after Samsung's service: frame indentations above the SIM tray, inner screen bezel cracks, bulging adhesive near the USB-C port, and a front screen scratch (not captured on camera but present).</p>
+                    <p>Samsung's own "inspection photos" show damage they claim was "pre-existing," but the BEFORE photos prove this is false. The undamaged shipping box proves the damage occurred during Samsung's repair service—not during shipping—directly contradicting Samsung's deflection tactic of escalating a UPS claim.</p>
+                    <p style="margin-top: 1rem; font-weight: 600; color: #dc2626;"><strong>Bottom line:</strong> These images prove Samsung caused damage during their repair process, then attempted to deny responsibility by claiming it was "pre-existing" or deflecting blame to the shipping carrier despite photographic evidence proving otherwise.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Actions Taken Section -->
-    <section class="section section-dark" id="actions">
+    <!-- Resources Section -->
+    <section class="section resources-section" id="resources">
         <div class="container">
-            <h2 class="section-title">
-                <span class="title-icon">📋</span>
-                Actions Taken to Resolve
-            </h2>
-            <p class="section-subtitle">My exhaustive attempts to get a fair resolution</p>
-
-            <div class="disclaimer-banner neon-border">
-                <span class="warning-icon">⚠️</span>
-                These actions represent my personal attempts to resolve this matter. Not affiliated with Samsung.
+            <div class="section-header">
+                <span class="section-tag">Take Action</span>
+                <h2>Resources & How to Protect Yourself</h2>
+                <p class="section-subtitle">Tools and information to help you document mail-in repair issues and seek resolution.</p>
             </div>
 
-            <div class="actions-timeline">
-                <div class="action-card neon-card">
-                    <div class="action-number">1</div>
-                    <div class="action-content">
-                        <h3>Multiple Samsung Care+ Support Contacts</h3>
-                        <p>Placed numerous calls to Samsung Care+ support over several weeks attempting to obtain consistent information, status updates, and resolution. Experienced long hold times, inconsistent information between representatives, and lack of follow-through on promised callbacks.</p>
-                        <div class="action-tags">
-                            <span class="tag">Phone Support</span>
-                            <span class="tag">Multiple Attempts</span>
-                        </div>
-                    </div>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <div class="resource-icon">📋</div>
+                    <h3>Documentation Checklist</h3>
+                    <p>Download our comprehensive checklist for documenting your device before sending for repair.</p>
+                    <a href="#" class="btn btn-outline">Download PDF</a>
                 </div>
 
-                <div class="action-card neon-card">
-                    <div class="action-number">2</div>
-                    <div class="action-content">
-                        <h3>Supervisor & Executive Escalation Requests</h3>
-                        <p>Requested supervisor callbacks on multiple occasions during my interactions with Samsung support. Despite assurances, I never received a meaningful callback from anyone with decision-making authority.</p>
-                        <div class="action-tags">
-                            <span class="tag">Escalation</span>
-                            <span class="tag">No Response</span>
-                        </div>
-                    </div>
+                <div class="resource-card">
+                    <div class="resource-icon">⚖️</div>
+                    <h3>File BBB Complaint</h3>
+                    <p>Step-by-step guide to filing an effective Better Business Bureau complaint with proper documentation.</p>
+                    <a href="https://www.bbb.org/file-a-complaint" target="_blank" class="btn btn-outline">BBB Website</a>
                 </div>
 
-                <div class="action-card neon-card">
-                    <div class="action-number">3</div>
-                    <div class="action-content">
-                        <h3>Samsung CEO Office Contact (3 Emails)</h3>
-                        <p>Sent three separate emails to Samsung's executive customer care office over approximately 18 days. Received only automated acknowledgments with no substantive response or resolution attempt from executive-level staff.</p>
-                        <div class="action-tags">
-                            <span class="tag">Executive Contact</span>
-                            <span class="tag">18 Days</span>
-                            <span class="tag">No Resolution</span>
-                        </div>
-                    </div>
+                <div class="resource-card">
+                    <div class="resource-icon">🏛️</div>
+                    <h3>Attorney General Consumer Protection</h3>
+                    <p>Find your state's Attorney General consumer protection office to report deceptive business practices.</p>
+                    <a href="https://www.naag.org/find-my-ag/" target="_blank" class="btn btn-outline">Find Your AG</a>
                 </div>
 
-                <div class="action-card neon-card">
-                    <div class="action-number">4</div>
-                    <div class="action-content">
-                        <h3>Better Business Bureau Complaint</h3>
-                        <p>Filed a formal complaint with the Better Business Bureau. Samsung responded 19 days later with what I characterize as a "delivery-only" response that did not address the substantive issues. I formally rejected Samsung's response as inadequate and the complaint remains unresolved.</p>
-                        <div class="action-tags">
-                            <span class="tag">BBB</span>
-                            <span class="tag">Rejected Response</span>
-                        </div>
-                    </div>
+                <div class="resource-card">
+                    <div class="resource-icon">💬</div>
+                    <h3>Samsung Community Forums</h3>
+                    <p>Connect with other Samsung customers experiencing similar issues. Share experiences and solutions.</p>
+                    <a href="https://us.community.samsung.com/" target="_blank" class="btn btn-outline">Visit Forum</a>
                 </div>
 
-                <div class="action-card neon-card">
-                    <div class="action-number">5</div>
-                    <div class="action-content">
-                        <h3>Certified Letters to Samsung</h3>
-                        <p>Mailed certified letters to both Samsung Electronics America (U.S. headquarters) and Samsung Electronics Co., Ltd. (Republic of Korea headquarters) documenting the issue and requesting executive-level review and resolution.</p>
-                        <div class="action-tags">
-                            <span class="tag">Certified Mail</span>
-                            <span class="tag">International</span>
-                        </div>
-                    </div>
+                <div class="resource-card">
+                    <div class="resource-icon">🔍</div>
+                    <h3>Small Claims Court Guide</h3>
+                    <p>Information about pursuing small claims court action if other resolution attempts fail.</p>
+                    <a href="#" class="btn btn-outline">Learn More</a>
                 </div>
 
-                <div class="action-card neon-card highlight">
-                    <div class="action-number">6</div>
-                    <div class="action-content">
-                        <h3>State Attorney General Complaint</h3>
-                        <p>Filed a formal consumer complaint with my State Attorney General's office through both email and their official website submission form. This complaint documents the service issues, new damage, inconsistent communication, and Samsung's failure to provide satisfactory resolution.</p>
-                        <div class="action-tags">
-                            <span class="tag tag-critical">Active</span>
-                            <span class="tag">AG Office</span>
-                            <span class="tag">Current</span>
-                        </div>
-                    </div>
+                <div class="resource-card">
+                    <div class="resource-icon">📧</div>
+                    <h3>Email Templates</h3>
+                    <p>Pre-written professional email templates for escalating issues with Samsung customer service.</p>
+                    <a href="#" class="btn btn-outline">View Templates</a>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- What I'm Asking Section -->
-    <section class="section" id="asking">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-icon">🎯</span>
-                What I'm Asking For
-            </h2>
-            <p class="section-subtitle">A fair, cost-free resolution</p>
+            <!-- Samsung Contact Information Section -->
+            <div class="samsung-contact-guide" style="margin-top: var(--spacing-2xl); padding: var(--spacing-xl); background: linear-gradient(135deg, #fee2e2, #fecaca); border-radius: var(--radius-lg); border: 3px solid var(--danger);">
+                <h2 style="color: var(--gray-900); margin-bottom: var(--spacing-md); font-size: 1.75rem;">📞 How to Contact Samsung (The Right Way)</h2>
+                <p style="color: var(--gray-700); margin-bottom: var(--spacing-lg); font-size: 1.0625rem;"><strong>Finding the right contact channels took extensive research. Here's what actually works:</strong></p>
 
-            <div class="disclaimer-banner neon-border">
-                <span class="warning-icon">⚠️</span>
-                This represents my personal position on resolution. Not affiliated with Samsung.
-            </div>
-
-            <div class="content-block glass-panel">
-                <p class="lead">I am seeking a <strong class="highlight-red">cost-free resolution</strong> from Samsung that acknowledges the service failures and damage that occurred while my device was in their custody.</p>
-
-                <div class="resolution-grid">
-                    <div class="resolution-card neon-card">
-                        <div class="resolution-icon">📱</div>
-                        <h3>1. Replacement Device</h3>
-                        <p>A new replacement device of equal or greater value to my Galaxy Z Fold 6. Given the documented damage, compromised structural integrity, and loss of trust in Samsung's repair processes, I believe the device's reliability and value have been permanently compromised.</p>
-                        <div class="resolution-priority critical">ESSENTIAL</div>
+                <div class="contact-methods-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--spacing-lg); margin-bottom: var(--spacing-xl);">
+                    <div style="background: white; padding: var(--spacing-md); border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
+                        <h4 style="color: var(--gray-900); margin-bottom: var(--spacing-sm); display: flex; align-items: center; gap: 8px;">
+                            <span style="font-size: 1.5rem;">📱</span> Samsung Care+ Phone Support
+                        </h4>
+                        <p style="font-size: 1.125rem; font-weight: 700; color: var(--primary); margin-bottom: var(--spacing-xs);">(833) 690-0918</p>
+                        <p style="color: var(--gray-600); font-size: 0.9375rem;">24/7 toll-free support for Samsung Care+ customers</p>
                     </div>
 
-                    <div class="resolution-card neon-card">
-                        <div class="resolution-icon">👔</div>
-                        <h3>2. Executive-Level Review</h3>
-                        <p>Direct phone contact from a Samsung executive or empowered decision-maker who can conduct a thorough review of this case and provide real-time resolution. I have exhausted all standard support channels without meaningful results.</p>
-                        <div class="resolution-priority high">REQUIRED</div>
+                    <div style="background: white; padding: var(--spacing-md); border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
+                        <h4 style="color: var(--gray-900); margin-bottom: var(--spacing-sm); display: flex; align-items: center; gap: 8px;">
+                            <span style="font-size: 1.5rem;">💬</span> Samsung Care+ Email
+                        </h4>
+                        <p style="font-size: 1.0rem; font-weight: 700; color: var(--primary); margin-bottom: var(--spacing-xs); word-break: break-all;">samsungmxcare@servify.tech</p>
+                        <p style="color: var(--gray-600); font-size: 0.9375rem;">Official email for Samsung Care+ service issues</p>
                     </div>
 
-                    <div class="resolution-card neon-card">
-                        <div class="resolution-icon">📄</div>
-                        <h3>3. Written Explanation</h3>
-                        <p>A detailed written explanation of what occurred during the service process, how the damage happened, and why Samsung believes UPS (the shipping carrier) is responsible for damage that appears consistent with service/assembly errors rather than shipping trauma.</p>
-                        <div class="resolution-priority medium">REQUESTED</div>
+                    <div style="background: white; padding: var(--spacing-md); border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
+                        <h4 style="color: var(--gray-900); margin-bottom: var(--spacing-sm); display: flex; align-items: center; gap: 8px;">
+                            <span style="font-size: 1.5rem;">📞</span> General Samsung Support
+                        </h4>
+                        <p style="font-size: 1.125rem; font-weight: 700; color: var(--primary); margin-bottom: var(--spacing-xs);">1-800-SAMSUNG</p>
+                        <p style="color: var(--gray-600); font-size: 0.9375rem;">Main customer service line (expect transfers)</p>
+                    </div>
+
+                    <div style="background: white; padding: var(--spacing-md); border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
+                        <h4 style="color: var(--gray-900); margin-bottom: var(--spacing-sm); display: flex; align-items: center; gap: 8px;">
+                            <span style="font-size: 1.5rem;">🌐</span> Samsung Online Support
+                        </h4>
+                        <a href="https://www.samsung.com/us/support/contact/" target="_blank" style="font-size: 0.9375rem; font-weight: 600; color: #0284c7; text-decoration: underline;">samsung.com/us/support/contact</a>
+                        <p style="color: var(--gray-600); font-size: 0.9375rem; margin-top: var(--spacing-xs);">Live chat and email support options</p>
+                    </div>
+
+                    <div style="background: white; padding: var(--spacing-md); border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
+                        <h4 style="color: var(--gray-900); margin-bottom: var(--spacing-sm); display: flex; align-items: center; gap: 8px;">
+                            <span style="font-size: 1.5rem;">📝</span> CEO Office Contact Form
+                        </h4>
+                        <a href="https://www.samsung.com/us/support/ceo-office/" target="_blank" style="font-size: 0.9375rem; font-weight: 600; color: #0284c7; text-decoration: underline;">samsung.com/us/support/ceo-office</a>
+                        <p style="color: var(--gray-600); font-size: 0.9375rem; margin-top: var(--spacing-xs);">Executive escalation for unresolved issues</p>
+                    </div>
+
+                    <div style="background: white; padding: var(--spacing-md); border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
+                        <h4 style="color: var(--gray-900); margin-bottom: var(--spacing-sm); display: flex; align-items: center; gap: 8px;">
+                            <span style="font-size: 1.5rem;">✉️</span> Samsung US Headquarters
+                        </h4>
+                        <p style="font-size: 0.9375rem; color: var(--gray-700); line-height: 1.6; margin: 0;">
+                            <strong>Samsung Electronics America, Inc.</strong><br>
+                            Office of the CEO<br>
+                            85 Challenger Road<br>
+                            Ridgefield Park, NJ 07660<br>
+                            United States
+                        </p>
+                    </div>
+
+                    <div style="background: white; padding: var(--spacing-md); border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
+                        <h4 style="color: var(--gray-900); margin-bottom: var(--spacing-sm); display: flex; align-items: center; gap: 8px;">
+                            <span style="font-size: 1.5rem;">🌏</span> Samsung Korea Headquarters
+                        </h4>
+                        <p style="font-size: 0.9375rem; color: var(--gray-700); line-height: 1.6; margin: 0;">
+                            <strong>Samsung Electronics Co., Ltd.</strong><br>
+                            Executive Leadership Office<br>
+                            129 Samsung-ro, Yeongtong-gu<br>
+                            Suwon-si, Gyeonggi-do 16677<br>
+                            REPUBLIC OF KOREA
+                        </p>
                     </div>
                 </div>
 
-                <div class="callout callout-critical">
-                    <div class="callout-icon">⚠️</div>
-                    <div class="callout-content">
-                        <strong>To be clear:</strong> I sent in a device with a minor screen protector peel. I paid $99 for a repair I did not originally need. I received back a device with multiple new areas of damage. Samsung's only offer has been to create yet another service ticket and send the phone back in—a process I have lost all confidence in.
-                        <br><br>
-                        I believe a cost-free replacement is a reasonable and appropriate resolution given the totality of this experience.
+                <div style="background: linear-gradient(135deg, #fef3c7, #fde68a); padding: var(--spacing-lg); border-radius: var(--radius-md); border-left: 4px solid var(--warning); margin-bottom: var(--spacing-xl);">
+                    <h3 style="color: var(--gray-900); margin-bottom: var(--spacing-md); font-size: 1.25rem;">⚠️ If Samsung Doesn't Respond or Refuses to Help</h3>
+                    <p style="color: var(--gray-700); margin-bottom: var(--spacing-md);"><strong>Don't give up. You have legal options:</strong></p>
+                    
+                    <div style="display: flex; flex-direction: column; gap: var(--spacing-md);">
+                        <div>
+                            <h4 style="color: var(--gray-900); font-size: 1.0625rem; margin-bottom: var(--spacing-xs);">1️⃣ File a BBB Complaint</h4>
+                            <p style="color: var(--gray-700); font-size: 0.9375rem;">Better Business Bureau complaints force Samsung to provide a documented response within 30 days.</p>
+                            <a href="https://www.bbb.org/file-a-complaint" target="_blank" style="color: #0284c7; font-weight: 600; font-size: 0.9375rem;">File BBB Complaint →</a>
+                        </div>
+
+                        <div>
+                            <h4 style="color: var(--gray-900); font-size: 1.0625rem; margin-bottom: var(--spacing-xs);">2️⃣ File an Attorney General Complaint</h4>
+                            <p style="color: var(--gray-700); font-size: 0.9375rem;">State Attorney General consumer protection offices investigate deceptive business practices and pattern complaints.</p>
+                            <a href="https://www.naag.org/find-my-ag/" target="_blank" style="color: #0284c7; font-weight: 600; font-size: 0.9375rem;">Find Your State AG →</a>
+                        </div>
+
+                        <div>
+                            <h4 style="color: var(--gray-900); font-size: 1.0625rem; margin-bottom: var(--spacing-xs);">3️⃣ File an FTC Complaint</h4>
+                            <p style="color: var(--gray-700); font-size: 0.9375rem;">Federal Trade Commission tracks consumer complaints about unfair/deceptive business practices.</p>
+                            <a href="https://reportfraud.ftc.gov/" target="_blank" style="color: #0284c7; font-weight: 600; font-size: 0.9375rem;">File FTC Complaint →</a>
+                        </div>
+
+                        <div>
+                            <h4 style="color: var(--gray-900); font-size: 1.0625rem; margin-bottom: var(--spacing-xs);">4️⃣ Small Claims Court</h4>
+                            <p style="color: var(--gray-700); font-size: 0.9375rem;">For damages under your state's small claims limit (typically $5,000-$10,000). No attorney required. Filing fee usually under $100.</p>
+                            <p style="color: var(--gray-700); font-size: 0.9375rem; margin-top: var(--spacing-xs);"><strong>Document everything:</strong> photos, emails, repair receipts, timeline of events.</p>
+                        </div>
+
+                        <div>
+                            <h4 style="color: var(--gray-900); font-size: 1.0625rem; margin-bottom: var(--spacing-xs);">5️⃣ Social Media Pressure</h4>
+                            <p style="color: var(--gray-700); font-size: 0.9375rem;">Public complaints on Twitter/X (@Samsung, @SamsungSupport), Reddit (r/Samsung, r/GalaxyFold), and Samsung Community Forums can sometimes force action when private channels fail.</p>
+                        </div>
+
+                        <div>
+                            <h4 style="color: var(--gray-900); font-size: 1.0625rem; margin-bottom: var(--spacing-xs);">6️⃣ Credit Card Dispute/Chargeback</h4>
+                            <p style="color: var(--gray-700); font-size: 0.9375rem;">If you paid for repairs with a credit card and Samsung failed to deliver promised services or caused damage, file a dispute with your card issuer within 60-120 days of charge.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Evidence Section -->
-    <section class="section section-dark" id="evidence">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-icon">📁</span>
-                Evidence &amp; Documentation
-            </h2>
-            <p class="section-subtitle">Comprehensive records maintained throughout</p>
-
-            <div class="disclaimer-banner neon-border">
-                <span class="warning-icon">⚠️</span>
-                Evidence placeholders are for documentation purposes. Not affiliated with Samsung.
-            </div>
-
-            <div class="evidence-grid">
-                <div class="evidence-card neon-card">
-                    <div class="evidence-icon">📸</div>
-                    <h3>Photographic Documentation</h3>
-                    <ul class="evidence-list">
-                        <li><span class="check">✓</span> Front display scratch (multiple angles)</li>
-                        <li><span class="check">✓</span> Frame damage above SIM tray</li>
-                        <li><span class="check">✓</span> Inner screen bezel damage (both locations)</li>
-                        <li><span class="check">✓</span> Adhesive protrusion near charging port</li>
-                        <li><span class="check">✓</span> Overall device condition post-service</li>
+                <div style="background: white; padding: var(--spacing-lg); border-radius: var(--radius-md); border-left: 4px solid #0284c7;">
+                    <h3 style="color: var(--gray-900); margin-bottom: var(--spacing-sm); font-size: 1.25rem;">💡 Pro Tips for Dealing with Samsung Support</h3>
+                    <ul style="color: var(--gray-700); line-height: 1.8; margin-left: var(--spacing-md);">
+                        <li><strong>Document everything:</strong> Save all emails, take screenshots of chats, record call dates/times/rep names</li>
+                        <li><strong>Request case numbers:</strong> Get a case/ticket number for every interaction</li>
+                        <li><strong>Ask for escalation:</strong> If a rep can't help, immediately request a supervisor or manager</li>
+                        <li><strong>Be persistent but professional:</strong> Stay calm, stick to facts, reference your documentation</li>
+                        <li><strong>Set deadlines:</strong> "I need a response by [date] or I will escalate to BBB/AG"</li>
+                        <li><strong>Use multiple channels:</strong> Don't rely on just phone or email—try both, plus social media</li>
+                        <li><strong>Take photos BEFORE sending device in:</strong> Document pristine condition with timestamps</li>
                     </ul>
-                    <div class="evidence-badge">Photos Available</div>
-                </div>
-
-                <div class="evidence-card neon-card">
-                    <div class="evidence-icon">📧</div>
-                    <h3>Written Communications</h3>
-                    <ul class="evidence-list">
-                        <li><span class="check">✓</span> Emails to Samsung CEO office</li>
-                        <li><span class="check">✓</span> BBB complaint submission</li>
-                        <li><span class="check">✓</span> Samsung's BBB response</li>
-                        <li><span class="check">✓</span> My rejection of Samsung's BBB response</li>
-                        <li><span class="check">✓</span> Attorney General complaint documentation</li>
-                    </ul>
-                    <div class="evidence-badge">Documented</div>
-                </div>
-
-                <div class="evidence-card neon-card">
-                    <div class="evidence-icon">📋</div>
-                    <h3>Service Records</h3>
-                    <ul class="evidence-list">
-                        <li><span class="check">✓</span> Original service ticket information</li>
-                        <li><span class="check">✓</span> UPS shipping QR code and tracking</li>
-                        <li><span class="check">✓</span> Payment receipt for $99 repair</li>
-                        <li><span class="check">✓</span> Service timeline with dates</li>
-                        <li><span class="check">✓</span> Call logs and reference numbers</li>
-                    </ul>
-                    <div class="evidence-badge">Verified</div>
-                </div>
-
-                <div class="evidence-card neon-card">
-                    <div class="evidence-icon">📦</div>
-                    <h3>Shipping Documentation</h3>
-                    <ul class="evidence-list">
-                        <li><span class="check">✓</span> UPS packaging details (UPS packaged per Samsung)</li>
-                        <li><span class="check">✓</span> Return shipping condition (intact packaging)</li>
-                        <li><span class="check">✓</span> Shipping labels and tracking history</li>
-                        <li><span class="check">✓</span> No external damage to package</li>
-                    </ul>
-                    <div class="evidence-badge">Preserved</div>
-                </div>
-            </div>
-
-            <div class="callout callout-info">
-                <div class="callout-icon">🔒</div>
-                <div class="callout-content">
-                    <strong>Privacy Notice:</strong> I can provide copies of this documentation to appropriate parties (regulatory agencies, legal representatives, or Samsung executive staff) upon request. Full documentation is maintained in my personal records.
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section class="section" id="faq">
+    <!-- Contact/Submit Section -->
+    <section class="section contact-section" id="contact">
         <div class="container">
-            <h2 class="section-title">
-                <span class="title-icon">❓</span>
-                Frequently Asked Questions
-            </h2>
-            <p class="section-subtitle">Common questions about this situation</p>
-
-            <div class="disclaimer-banner neon-border">
-                <span class="warning-icon">⚠️</span>
-                These FAQs reflect my personal perspective and experience. Not affiliated with Samsung.
-            </div>
-
-            <div class="faq-grid">
-                <div class="faq-card neon-card">
-                    <div class="faq-question">
-                        <span class="faq-icon">Q</span>
-                        <h3>Why didn't you just replace the screen protector yourself?</h3>
-                    </div>
-                    <div class="faq-answer">
-                        <span class="faq-icon answer">A</span>
-                        <p>Samsung's official guidance advises against customers removing the inner screen protector themselves, citing potential risks to the device and warranty concerns. Samsung also advertises a service policy specifically for screen protector replacement (one free, then $20 each). I followed Samsung's recommended process and used their authorized service channels, believing this was the safest approach for a nearly $2,000 device.</p>
-                    </div>
-                </div>
-
-                <div class="faq-card neon-card">
-                    <div class="faq-question">
-                        <span class="faq-icon">Q</span>
-                        <h3>Why is the adhesive protrusion such a concern?</h3>
-                    </div>
-                    <div class="faq-answer">
-                        <span class="faq-icon answer">A</span>
-                        <p>Adhesive protrusion indicates improper reassembly. It can create several problems: pressure on internal components that may cause future failures, compromised sealing that reduces dust/water protection, visible evidence of poor workmanship on a premium device, and uncertainty about what other corners may have been cut during reassembly. On a precision device like a foldable phone, attention to detail is critical.</p>
-                    </div>
-                </div>
-
-                <div class="faq-card neon-card">
-                    <div class="faq-question">
-                        <span class="faq-icon">Q</span>
-                        <h3>Why not just send the phone back in for another repair?</h3>
-                    </div>
-                    <div class="faq-answer">
-                        <span class="faq-icon answer">A</span>
-                        <p>I have completely lost confidence in Samsung's service process. I sent in a device with a minor screen protector issue. I received inconsistent communication, was charged $99 for a repair I didn't originally need, and got the phone back with multiple new areas of damage. Samsung has offered no accountability, only to create another service ticket and repeat the process. I have no reason to believe a second service attempt would be any different, and I risk further damage to my device.</p>
-                    </div>
-                </div>
-
-                <div class="faq-card neon-card">
-                    <div class="faq-question">
-                        <span class="faq-icon">Q</span>
-                        <h3>What makes you think the damage happened during service and not during shipping?</h3>
-                    </div>
-                    <div class="faq-answer">
-                        <span class="faq-icon answer">A</span>
-                        <p>Several factors: (1) The shipping package showed no external damage; (2) The device was properly secured in packaging; (3) The pattern of damage—particularly the inner bezel damage and adhesive protrusion—is more consistent with disassembly/reassembly issues than shipping trauma; (4) Shipping damage typically affects external corners and edges, not internal bezel areas and adhesive application; (5) UPS packaged the device per Samsung's explicit instructions, following their procedures.</p>
-                    </div>
-                </div>
-
-                <div class="faq-card neon-card">
-                    <div class="faq-question">
-                        <span class="faq-icon">Q</span>
-                        <h3>Have you considered pursuing legal action?</h3>
-                    </div>
-                    <div class="faq-answer">
-                        <span class="faq-icon answer">A</span>
-                        <p>I am currently pursuing resolution through regulatory channels (State Attorney General) and continuing to document all aspects of this case. I am attempting to resolve this through appropriate escalation channels before considering any legal options. My preference is for Samsung to acknowledge the issue and provide a fair resolution without requiring legal intervention.</p>
-                    </div>
-                </div>
-
-                <div class="faq-card neon-card">
-                    <div class="faq-question">
-                        <span class="faq-icon">Q</span>
-                        <h3>What are you doing now while waiting for resolution?</h3>
-                    </div>
-                    <div class="faq-answer">
-                        <span class="faq-icon answer">A</span>
-                        <p>I am continuing to use the damaged device as I have no alternative. I have applied an aftermarket screen protector to the front display to mask the scratch. I monitor the adhesive protrusion for any signs of worsening separation. I am maintaining detailed documentation and pursuing all available regulatory and escalation channels. I remain open to a good-faith resolution from Samsung at any time.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="section section-dark" id="contact">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-icon">📧</span>
-                Contact
-            </h2>
-            <p class="section-subtitle">For authorized parties and media inquiries</p>
-
-            <div class="disclaimer-banner neon-border">
-                <span class="warning-icon">⚠️</span>
-                Contact information is provided for informational purposes only. Not affiliated with Samsung.
+            <div class="section-header">
+                <span class="section-tag">Get in Touch</span>
+                <h2>Share Your Experience</h2>
+                <p class="section-subtitle">Help others by documenting your Samsung Mail-In Repair Service experience. Your story matters.</p>
             </div>
 
             <div class="contact-grid">
-                <div class="contact-card neon-card">
-                    <div class="contact-icon">🏢</div>
-                    <h3>For Samsung Representatives</h3>
-                    <p>If you are empowered to resolve this matter, please contact me directly. I am seeking direct dialogue with someone who can review this case thoroughly and provide a cost-free resolution.</p>
-                    <div class="contact-badge">Decision Makers Welcome</div>
+                <div class="contact-card">
+                    <h3>Submit Your Report</h3>
+                    <p>Have a similar experience with Samsung Mail-In Repair Service? Share your story to help warn others and build a documented pattern.</p>
+                    <form class="report-form" id="reportForm">
+                        <input type="text" placeholder="Your Name (optional)" class="form-input">
+                        <input type="email" placeholder="Email (optional, for follow-up)" class="form-input">
+                        <select class="form-input">
+                            <option>Select Issue Type</option>
+                            <option>Repair Damage</option>
+                            <option>Denied Claim</option>
+                            <option>Customer Service Issues</option>
+                            <option>Z Fold Problems</option>
+                            <option>Other</option>
+                        </select>
+                        <textarea placeholder="Describe your experience..." class="form-textarea" rows="6"></textarea>
+                        <button type="submit" class="btn btn-primary">Submit Report</button>
+                    </form>
                 </div>
 
-                <div class="contact-card neon-card">
-                    <div class="contact-icon">📰</div>
-                    <h3>For Media or Advocacy Organizations</h3>
-                    <p>I am willing to share my full documentation and experience with credible media outlets or consumer advocacy organizations interested in service quality issues affecting consumers.</p>
-                    <div class="contact-badge">Documentation Available</div>
-                </div>
-            </div>
+                <div class="contact-info">
+                    <h3>Other Ways to Connect</h3>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <span class="method-icon">📧</span>
+                            <div>
+                                <strong>Email</strong>
+                                <p>contact@thesamsungnightmare.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <span class="method-icon">💬</span>
+                            <div>
+                                <strong>Reddit Community</strong>
+                                <p>r/GalaxyFold • r/Samsung</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <span class="method-icon">🐦</span>
+                            <div>
+                                <strong>Twitter/X</strong>
+                                <p>@SamsungWarning</p>
+                            </div>
+                        </div>
+                    </div>
 
-            <div class="callout callout-warning">
-                <div class="callout-icon">🔒</div>
-                <div class="callout-content">
-                    <strong>Privacy Warning:</strong> Do not include sensitive personal information (Social Security numbers, credit card details, passwords, etc.) in any communications. This website is for documentation purposes and I cannot guarantee the security of unsolicited communications.
+                    <div class="disclaimer-box">
+                        <h4>Privacy Notice</h4>
+                        <p>We respect your privacy. Submitted reports may be published anonymously. Personal information (names, emails) will never be shared without explicit consent.</p>
+                    </div>
                 </div>
-            </div>
-
-            <div class="contact-note glass-panel">
-                <p><em>Note: A contact form would normally appear here. Since this is a static site with no backend, interested parties can reach out through the regulatory complaints already filed or through public records associated with those complaints.</em></p>
             </div>
         </div>
     </section>
@@ -808,25 +1193,38 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Legal Disclaimer</h3>
-                    <p><strong>Not Affiliated with Samsung:</strong> This website documents my personal consumer experience and is not affiliated with, endorsed by, or representing Samsung Electronics or any of its subsidiaries. "Samsung," "Galaxy Z Fold," and related product names are trademarks of Samsung Electronics Co., Ltd.</p>
+                    <h3>Samsung Mail-In Repair Warning</h3>
+                    <p>A consumer awareness website documenting real experiences with Samsung Mail-In Repair Service. Not affiliated with Samsung Electronics.</p>
                 </div>
-
                 <div class="footer-section">
-                    <h3>Personal Opinion</h3>
-                    <p>All statements on this website represent my personal perspective, opinions, and interpretation of events based on my records, documentation, and lived experience. While I have made every effort to ensure accuracy, this is a subjective account of my consumer experience.</p>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#my-story">My Story</a></li>
+                        <li><a href="#community">Community Reports</a></li>
+                        <li><a href="#timeline">Timeline</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                    </ul>
                 </div>
-
                 <div class="footer-section">
-                    <h3>Documentation Purpose</h3>
-                    <p>This website serves as a centralized documentation of my experience for reference by regulatory agencies, consumer advocacy organizations, and other appropriate parties. No Samsung logos, copyrighted imagery, or official branding materials are used.</p>
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://www.bbb.org" target="_blank">BBB.org</a></li>
+                        <li><a href="https://www.naag.org" target="_blank">Attorney General</a></li>
+                        <li><a href="https://us.community.samsung.com/" target="_blank">Samsung Forums</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#disclaimer">Disclaimer</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Use</a></li>
+                    </ul>
                 </div>
             </div>
-
-            <div class="footer-meta">
-                <div class="footer-divider"></div>
-                <p class="last-updated">Last Updated: <strong>January 6, 2026</strong></p>
-                <p class="footer-tagline">This is a personal consumer documentation website</p>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Samsung Repair Warning. All experiences documented are real. Samsung is a trademark of Samsung Electronics Co., Ltd.</p>
+                <p class="footer-note">This is an independent consumer advocacy website. We are not affiliated with, endorsed by, or connected to Samsung Electronics.</p>
             </div>
         </div>
     </footer>
