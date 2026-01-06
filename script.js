@@ -340,16 +340,6 @@ function initializeAnimations() {
     
     // Counter animations for stats
     animateCounters();
-    
-    // Parallax effect on hero
-    window.addEventListener('scroll', () => {
-        const scrolled = window.pageYOffset;
-        const hero = document.querySelector('.hero');
-        if (hero && scrolled < window.innerHeight) {
-            hero.style.transform = `translateY(${scrolled * 0.3}px)`;
-            hero.style.opacity = 1 - (scrolled / window.innerHeight) * 0.5;
-        }
-    });
 }
 
 function animateCounters() {
