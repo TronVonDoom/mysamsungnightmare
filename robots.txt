@@ -1,0 +1,36 @@
+# Samsung Repair Warning - robots.txt
+# Consumer advocacy website
+
+# Allow all search engines
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.samsungrepairwarning.com/sitemap.xml
+
+# Crawl delay for respectful crawling
+Crawl-delay: 10
+
+# Disallow admin/private areas (if any exist)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.php$
+Disallow: /*.cgi$
+
+# Allow important resources
+Allow: /assets/
+Allow: /styles.css
+Allow: /script.js
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.gif$
+Allow: /*.webp$
+Allow: /*.pdf$
+
+# RSS Feed
+Allow: /feed.xml
+
+# Note: This is a consumer protection website documenting 
+# real experiences with Samsung Mail-In Repair Service.
+# Not affiliated with Samsung Electronics.

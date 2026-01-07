@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-Repair Documentation Checklist - Samsung Repair Warning</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @media print {
+            .no-print { display: none; }
+            body { background: white; }
+            .checklist-container { box-shadow: none; }
+        }
+        .checklist-container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 40px;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        .checklist-header {
+            text-align: center;
+            border-bottom: 3px solid #dc2626;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .checkbox-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            padding: 15px;
+            margin-bottom: 15px;
+            background: #f9fafb;
+            border-left: 4px solid #dc2626;
+        }
+        .checkbox-item input[type="checkbox"] {
+            margin-top: 4px;
+            width: 20px;
+            height: 20px;
+        }
+        .section-title {
+            background: #dc2626;
+            color: white;
+            padding: 15px;
+            margin: 30px 0 20px 0;
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="checklist-container">
+        <div class="checklist-header">
+            <h1>📋 Pre-Repair Documentation Checklist</h1>
+            <p style="color: #6b7280; margin-top: 10px;">Complete this checklist BEFORE sending your device for mail-in repair</p>
+            <p style="font-size: 0.875rem; color: #dc2626; margin-top: 10px;"><strong>⚠️ This documentation is your only protection against false damage claims</strong></p>
+        </div>
+
+        <div class="no-print" style="text-align: center; margin-bottom: 30px;">
+            <button onclick="window.print()" style="padding: 12px 24px; background: #dc2626; color: white; border: none; border-radius: 8px; cursor: pointer; font-size: 1rem;">
+                🖨️ Print This Checklist
+            </button>
+        </div>
+
+        <div style="background: #fee2e2; padding: 20px; border-radius: 8px; margin-bottom: 30px;">
+            <h3 style="color: #dc2626; margin-bottom: 10px;">📅 Repair Details</h3>
+            <p><strong>Device Model:</strong> <span style="border-bottom: 1px solid #000; display: inline-block; min-width: 300px; margin-left: 10px;">_________________</span></p>
+            <p><strong>Serial Number / IMEI:</strong> <span style="border-bottom: 1px solid #000; display: inline-block; min-width: 250px; margin-left: 10px;">_________________</span></p>
+            <p><strong>Repair Claim Number:</strong> <span style="border-bottom: 1px solid #000; display: inline-block; min-width: 250px; margin-left: 10px;">_________________</span></p>
+            <p><strong>Date Shipped:</strong> <span style="border-bottom: 1px solid #000; display: inline-block; min-width: 200px; margin-left: 10px;">_________________</span></p>
+            <p><strong>Tracking Number:</strong> <span style="border-bottom: 1px solid #000; display: inline-block; min-width: 250px; margin-left: 10px;">_________________</span></p>
+        </div>
+
+        <h2 class="section-title">📸 Photo & Video Documentation</h2>
+        
+        <div class="checkbox-item">
+            <input type="checkbox" id="photo1">
+            <label for="photo1"><strong>Front view of entire device</strong> - Clear, well-lit photo showing front screen condition</label>
+        </div>
+        
+        <div class="checkbox-item">
+            <input type="checkbox" id="photo2">
+            <label for="photo2"><strong>Back view of entire device</strong> - Including camera lenses, showing any marks or imperfections</label>
+        </div>
+        
+        <div class="checkbox-item">
+            <input type="checkbox" id="photo3">
+            <label for="photo3"><strong>All edges and frames</strong> - Left, right, top, bottom edges in close-up detail</label>
+        </div>
+        
+        <div class="checkbox-item">
+            <input type="checkbox" id="photo4">
+            <label for="photo4"><strong>All corners</strong> - Close-up of each corner showing condition</label>
+        </div>
+        
+        <div class="checkbox-item">
+            <input type="checkbox" id="photo5">
+            <label for="photo5"><strong>All ports and openings</strong> - USB-C port, speaker grilles, SIM tray, any other openings</label>
+        </div>
+        
+        <div class="checkbox-item">
+            <input type="checkbox" id="photo6">
+            <label for="photo6"><strong>Power and volume buttons</strong> - Close-up showing button condition</label>
+        </div>
+        
+        <div class="checkbox-item">
+            <input type="checkbox" id="photo7">
+            <label for="photo7"><strong>Screen edges and bezels</strong> - Where screen meets frame, showing adhesive condition</label>
+        </div>
+        
+        <div class="checkbox-item">
+            <input type="checkbox" id="photo8">
+            <label for="photo8"><strong>Any existing marks or scratches</strong> - Close-up of ANY imperfection, no matter how minor</label>
+        </div>
+        
+        <div class="checkbox-item">
+            <input type="checkbox" id="photo9">
+            <label for="photo9"><strong>Screen ON showing functionality</strong> - Device powered on, displaying content clearly</label>
+        </div>
+        
+        <div class="checkbox-item">
+            <input type="checkbox" id="photo10">
+            <label for="photo10"><strong>Serial number / IMEI photo</strong> - Proof photos match your specific device</label>
+        </div>
+        
+        <div class="checkbox-item">
+            <input type="checkbox" id="photo11">
+            <label for="photo11"><strong>360° VIDEO walkthrough</strong> - 2-3 minute video showing device from all angles while narrating condition</label>
+        </div>
+
+        <h2 class="section-title">📱 For Foldable Devices (Z Fold, Z Flip)</h2>
+        
+        <div class="checkbox-item">
+            <input type="checkbox" id="fold1">
+            <label for="fold1"><strong>Inner screen - fully open</strong> - Clear photo of entire inner display</label>
+        </div>
+        
+        <div class="checkbox-item">
+            <input type="checkbox" id="fold2">
+            <label for="fold2"><strong>Inner screen crease area</strong> - Close-up of fold crease showing screen protector condition</label>
+        </div>
+        
+        <div class="checkbox-item">
+            <input type="checkbox" id="fold3">
+            <label for="fold3"><strong>Hinge mechanism</strong> - Photos from multiple angles showing hinge condition</label>
+        </div>
+        
+        <div class="checkbox-item">
+            <input type="checkbox" id="fold4">
+            <label for="fold4"><strong>Video of opening/closing action</strong> - Demonstrate hinge works smoothly, device opens/closes fully</label>
+        </div>
+        
+        <div class="checkbox-item">
+            <input type="checkbox" id="fold5">
+            <label for="fold5"><strong>Inner screen bezels</strong> - Close-up showing bezel condition (no cracks or damage)</label>
+        </div>
+
+        <h2 class="section-title">💾 File Management & Backup</h2>
+        
+        <div class="checkbox-item">
+            <input type="checkbox" id="backup1">
+            <label for="backup1"><strong>All photos saved with timestamps</strong> - Use original photo timestamps, don't edit/modify</label>
+        </div>
+        
+        <div class="checkbox-item">
+            <input type="checkbox" id="backup2">
+            <label for="backup2"><strong>Uploaded to cloud storage</strong> - Google Drive, OneDrive, Dropbox, iCloud (multiple locations better)</label>
+        </div>
+        
+        <div class="checkbox-item">
+            <input type="checkbox" id="backup3">
+            <label for="backup3"><strong>Emailed to yourself</strong> - Timestamped email creates additional proof of date</label>
+        </div>
+        
+        <div class="checkbox-item">
+            <input type="checkbox" id="backup4">
+            <label for="backup4"><strong>Saved to external drive/computer</strong> - Local backup in case cloud is inaccessible</label>
+        </div>
+        
+        <div class="checkbox-item">
+            <input type="checkbox" id="backup5">
+            <label for="backup5"><strong>Created comparison folder structure</strong> - "BEFORE Repair [Date]" folder clearly labeled</label>
+        </div>
+
+        <h2 class="section-title">📝 Written Documentation</h2>
+        
+        <div class="checkbox-item">
+            <input type="checkbox" id="written1">
+            <label for="written1"><strong>Repair authorization in writing</strong> - Email or portal confirmation of what will be repaired</label>
+        </div>
+        
+        <div class="checkbox-item">
+            <input type="checkbox" id="written2">
+            <label for="written2"><strong>Cost estimate documented</strong> - Screenshot or email showing quoted repair cost (if any)</label>
+        </div>
+        
+        <div class="checkbox-item">
+            <input type="checkbox" id="written3">
+            <label for="written3"><strong>Warranty/Samsung Care+ status confirmed</strong> - Documentation showing coverage applies</label>
+        </div>
+        
+        <div class="checkbox-item">
+            <input type="checkbox" id="written4">
+            <label for="written4"><strong>Device condition statement prepared</strong> - Written description: "Device in perfect working condition except for [specific issue]. No damage to frame, screen, hinge, or other components. See attached photos dated [date]."</label>
+        </div>
+        
+        <div class="checkbox-item">
+            <input type="checkbox" id="written5">
+            <label for="written5"><strong>Tracking number saved</strong> - UPS/FedEx tracking number documented for shipment</label>
+        </div>
+
+        <h2 class="section-title">📦 Shipping Preparation</h2>
+        
+        <div class="checkbox-item">
+            <input type="checkbox" id="ship1">
+            <label for="ship1"><strong>Device powered off and wiped</strong> - Factory reset or remove sensitive data</label>
+        </div>
+        
+        <div class="checkbox-item">
+            <input type="checkbox" id="ship2">
+            <label for="ship2"><strong>SIM card removed</strong> - Keep your SIM card, don't send it with device</label>
+        </div>
+        
+        <div class="checkbox-item">
+            <input type="checkbox" id="ship3">
+            <label for="ship3"><strong>Memory card removed</strong> - If applicable, remove SD card</label>
+        </div>
+        
+        <div class="checkbox-item">
+            <input type="checkbox" id="ship4">
+            <label for="ship4"><strong>Protective case removed</strong> - Send device only (unless instructed otherwise)</label>
+        </div>
+        
+        <div class="checkbox-item">
+            <input type="checkbox" id="ship5">
+            <label for="ship5"><strong>Screen protector documented</strong> - Note if applied, photo showing condition</label>
+        </div>
+        
+        <div class="checkbox-item">
+            <input type="checkbox" id="ship6">
+            <label for="ship6"><strong>Find My Device / Samsung Find enabled</strong> - Track device location during repair (optional but helpful)</label>
+        </div>
+
+        <h2 class="section-title">⚠️ Critical Protection Steps</h2>
+        
+        <div class="checkbox-item">
+            <input type="checkbox" id="protect1">
+            <label for="protect1"><strong>All documentation compiled in single folder</strong> - Everything in one place for easy access</label>
+        </div>
+        
+        <div class="checkbox-item">
+            <input type="checkbox" id="protect2">
+            <label for="protect2"><strong>Shared with trusted person</strong> - Backup person has access to all documentation</label>
+        </div>
+        
+        <div class="checkbox-item">
+            <input type="checkbox" id="protect3">
+            <label for="protect3"><strong>Contact information saved</strong> - Samsung Care+ number, claim number, service center address</label>
+        </div>
+        
+        <div class="checkbox-item">
+            <input type="checkbox" id="protect4">
+            <label for="protect4"><strong>Expected return date noted</strong> - Set reminder to follow up if device not returned by promised date</label>
+        </div>
+        
+        <div class="checkbox-item">
+            <input type="checkbox" id="protect5">
+            <label for="protect5"><strong>Device value documented</strong> - Receipt or proof of purchase showing device worth</label>
+        </div>
+
+        <div style="background: #fef3c7; padding: 20px; border-radius: 8px; margin: 30px 0; border-left: 4px solid #f59e0b;">
+            <h3 style="color: #92400e; margin-bottom: 10px;">✅ When Device Returns</h3>
+            <p style="color: #78350f;"><strong>INSPECT IMMEDIATELY before signing acceptance!</strong></p>
+            <ul style="color: #78350f; margin-top: 10px; line-height: 1.8;">
+                <li>Compare to your before photos - document any new damage IMMEDIATELY</li>
+                <li>Take new photos from same angles within 24 hours</li>
+                <li>Test all functions before accepting device</li>
+                <li>Email Samsung within 24 hours if ANY new issues found</li>
+                <li>Save the shipping box if damaged (proof of shipping damage vs. service damage)</li>
+            </ul>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 2px solid #e5e7eb;">
+            <p style="font-size: 0.875rem; color: #6b7280;">
+                <strong>Documentation is your only protection.</strong><br>
+                Samsung can claim "pre-existing damage" - your dated photos are your proof otherwise.
+            </p>
+            <p style="margin-top: 10px; font-size: 0.875rem; color: #6b7280;">
+                For more resources, visit <a href="https://www.samsungrepairwarning.com" style="color: #dc2626; text-decoration: underline;">SamsungRepairWarning.com</a>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Save checkbox states to localStorage
+        document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+            checkbox.addEventListener('change', (e) => {
+                localStorage.setItem(e.target.id, e.target.checked);
+            });
+            
+            // Load saved state
+            const saved = localStorage.getItem(checkbox.id);
+            if (saved === 'true') {
+                checkbox.checked = true;
+            }
+        });
+    </script>
+</body>
+</html>
